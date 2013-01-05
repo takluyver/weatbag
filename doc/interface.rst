@@ -36,7 +36,7 @@ Your module should define a class called ``Tile``, with the following interface:
    .. method:: action(player, do)
    
       Called when the player does something inside the tile. You need to
-      interpret the action and carry it out.
+      interpret the action and carry it out. Tile ``e1`` has a simple example.
       
       :param player: the active :class:`~weatbag.Player` instance
       :param action: list of strings - the player's input, split up into words,
@@ -46,7 +46,8 @@ Your module should define a class called ``Tile``, with the following interface:
    
       *Optional.* Called when the player tries to leave the square. To let them
       leave, return `True`, or to prevent them, print an explanation and return
-      `False`. If the method isn't found, the player can always leave.
+      `False`. If the method isn't found, the player can always leave. Tile
+      ``w1`` has a simple example.
       
       :param player: the active :class:`~weatbag.Player` instance
       :param direction: the direction the player is trying to leave, as a single
