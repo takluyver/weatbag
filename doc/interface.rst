@@ -51,4 +51,3 @@ Your module should define a class called ``Tile``, with the following interface:
       :param player: the active :class:`~weatbag.Player` instance
       :param direction: the direction the player is trying to leave, as a single
                         lowercase character, n/e/s/w
-      explanation
