@@ -10,6 +10,7 @@ class Player:
         self.position = (0,0)
     
     def has(self, item):
+        "Does the player have any of item?"
         return self.inventory[item] > 0
     
     def give(self, item, n=1):
@@ -64,6 +65,9 @@ def main():
         while True:
             do = action.get_action()
             if action.is_move(do):
+                # check if we can leave tile
+                if not getattr(tile, 'leave', lambda p,d: True)(player, do[1]):
+                    continue
                 # move
                 n,e = player.position
                 dn, de = action.process_move(do[1])
