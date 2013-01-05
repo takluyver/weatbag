@@ -12,13 +12,7 @@ def get_action():
         action = input('> ').lower().split()
     for prep in words.prepositions.intersection(action):
         action.remove(prep)
-    
 
-        # Look around
-        return look_around
-    
-
-        return (move, action[1][0])
     return action
 
 move_directions = {'n','e','s','w','north','east','south','west'}
@@ -36,7 +30,7 @@ def handle_action(tile, player, do):
     
     elif len(do) == 2 and (do[0] in words.look) and (do[1] in words.inventory):
         # Look at bag
-        for item, n in inventory.most_common():
+        for item, n in player.inventory.most_common():
             if n < 1:
                 break
             print(item, '(%d)' % n)
@@ -44,14 +38,9 @@ def handle_action(tile, player, do):
     else:
         tile.action(player, do)
 
-def process_move(direction):
-    direction = direction[0].lower()
-    if direction == 'n':
-        return (0, 1)
-    if direction == 's':
-        return (0, -1)
-    if direction == 'w':
-        return (-1, 0)
-    if direction == 'e':
-        return (1, 0)
-    return (0, 0)
+move_coords = {
+    'n': (0,  1),
+    's': (0, -1),
+    'w': (-1, 0),
+    'e': (1,  0)
+}

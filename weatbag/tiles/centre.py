@@ -5,9 +5,8 @@ class Tile:
         self.contents = {'rope': 1}
     
     def describe(self):
-        print("You are in a sizeable clearing in the forest. At your feet, you see "
-              "a mysterious trap door, with three golden keyholes. Paths lead off "
-              "in four directions, which your unerring sense of direction tells you "
+        print("You are in a sizeable clearing in the forest. Paths lead off in"
+              "four directions, which your unerring sense of direction tells you "
               "correspond to the four compass points.")
         if self.contents.get('rope'):
             print("A short length of rope is lying on the floor.")
