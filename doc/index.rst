@@ -22,6 +22,9 @@ The idea is that anything goes, but we do need a few house rules:
    interface.rst
    api_misc.rst
 
+If you prefer to learn by example, have a look at the `tiles already in the game
+<https://github.com/takluyver/weatbag/tree/master/weatbag/tiles>`_.
+
 Once you've made a tile or a group of tiles, submit a pull request to add it to
 the game. Don't hang about - if someone else adds tiles in the same location,
 the first one ready to merge gets the spot.
