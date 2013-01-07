@@ -19,17 +19,20 @@ class Tile:
     
     def action(self, player, do):
         if do[0] == "guess" and self.contents['flaming torch']: 
-            guess = int(do[1])
-            if guess > self.lucky_number: 
-                print("Too high! Guess again!")
-            elif guess < self.lucky_number: 
-                print("Too low! Guess again!")
-            else: 
-                print("You guessed my lucky number!")
-                print("The wizard hands you a flaming torch! "
-                    "He then suddenly vanishes, leaving behind a pile of dust.")
-                self.contents['flaming torch'] -= 1
-                player.give('flaming torch')
+            try: 
+                guess = int(do[1])
+                if guess > self.lucky_number: 
+                    print("Too high! Guess again!")
+                elif guess < self.lucky_number: 
+                    print("Too low! Guess again!")
+                else: 
+                    print("You guessed my lucky number!")
+                    print("The wizard hands you a flaming torch! "
+                        "He then suddenly vanishes, leaving behind a pile of dust.")
+                    self.contents['flaming torch'] -= 1
+                    player.give('flaming torch')
+            except: 
+                print("Please try guessing a number, like 'guess 7'.")
         elif (do[0] in words.take):
             print("You can't have my prize, you have to guess the lucky number!")
         else:
