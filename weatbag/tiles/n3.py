@@ -49,6 +49,7 @@ class Tile:
                 return False
             else: 
                 print("You manage to flee!")
+                return True
 
         if direction=='s':
             return True
