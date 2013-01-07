@@ -9,7 +9,7 @@ class Tile:
     def describe(self):
         if not self.enemy_dead: 
             print("You encounter an orc! He's got a mean look, but you're a " 
-                "strong lad. You should be able to take him. Swing or flee?")
+                "strong one. You should be able to take him. Attack or flee?")
         else: 
             print("You see an orc corpse here.")
 
@@ -58,7 +58,7 @@ class Tile:
             self.leave(player, 's')
             return
 
-        if do[0] == "swing": 
+        if do[0] in words.attack: 
             self.player_swing(player)
             self.enemy_swing(player)
         
