@@ -39,7 +39,7 @@ class Player:
             return "feeling very unhealthy"
         elif self.hit_points == 1: 
             return "nearly dead"
-        elif self.hit_points == 0: 
+        else: 
             return "dead"
 
 
