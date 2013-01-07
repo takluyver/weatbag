@@ -1,4 +1,5 @@
 from weatbag import words
+from weatbag.utils import transfer
 
 class Tile:
     def __init__(self):
@@ -17,9 +18,7 @@ class Tile:
             print("Sorry, I don't understand.")
     
     def take_berries(self, player):
-        if self.contents['berries'] > 0:
-            self.contents['berries'] -= 1
-            player.give('berries')
+        if transfer('berries', self.contents, player.inventory):
             print("Reaching up, you pick the berries.")
         else:
             print("There are no berries here.")

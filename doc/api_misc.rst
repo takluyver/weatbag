@@ -24,4 +24,8 @@ Understanding commands
 
 .. automodule:: weatbag.words
 
+Utility functions
+-----------------
+
+.. autofunction:: weatbag.utils.transfer
 
