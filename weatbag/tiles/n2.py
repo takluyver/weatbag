@@ -22,4 +22,5 @@ class Tile:
             else:
                 print("Good plan, but you don't have a torch.")
         
-        print("Sorry, I don't understand")
+        else:
+            print("Sorry, I don't understand")
