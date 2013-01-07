@@ -2,7 +2,9 @@ from weatbag import words
 
 class Tile:
     def describe(self):
-        print("You are standing in the mouth of a cave. The air feels cool.")
+        print("You are standing in the mouth of a cave. The air feels cool and "
+            "is filled with the stench of rotting flesh. "
+            "A dark path leads to the north. An exit to the south.")
     
     def leave(self, player, direction):
         if direction=='s':
