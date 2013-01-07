@@ -1,5 +1,6 @@
 from collections import Counter
 from importlib import import_module
+import re
 
 from . import action
 
@@ -34,18 +35,7 @@ class World:
         try:
             return self.tiles[key]
         except KeyError:
-            e,n = key
-            modname = 'weatbag.tiles.'
-            if n > 0:
-                modname += 'n'+str(n)
-            elif n < 0:
-                modname += 's'+str(abs(n))
-            
-            if e > 0:
-                modname += 'e'+str(e)
-            elif e < 0:
-                modname += 'w'+str(abs(e))
-            
+            modname = 'weatbag.tiles.' + coords_to_name(*key)
             try:
                 mod = import_module(modname)
             except ImportError:
@@ -55,11 +45,47 @@ class World:
             self.tiles[key] = tile
             return tile
 
+def coords_to_name(e, n):
+    modname = ''
+    if n > 0:
+        modname += 'n'+str(n)
+    elif n < 0:
+        modname += 's'+str(abs(n))
+    
+    if e > 0:
+        modname += 'e'+str(e)
+    elif e < 0:
+        modname += 'w'+str(abs(e))
+    
+    return modname
+
+_tile_name_re = re.compile(r'([ns]\d+)?([ew]\d+)?')
+def name_to_coords(tilename):
+    ns, es = _tile_name_re.match(tilename).groups()
+    if ns is None:
+        n = 0
+    elif ns[0] == 'n':
+        n = int(ns[1:])
+    else:
+        n = -int(ns[1:])
+    
+    if es is None:
+        e = 0
+    elif es[0] == 'e':
+        e = int(es[1:])
+    else:
+        e = -int(es[1:])
+    
+    return e, n
+
 def main():
     name = input("What is your name? ")
     player = Player(name)
+    interact(player)
+    
+def interact(player):
     world = World()
-    tile = world[0,0]
+    tile = world[player.position]
     tile.describe()
     while True:
         do = action.get_action()

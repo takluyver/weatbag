@@ -24,3 +24,5 @@ class Tile:
         
         else:
             print("Sorry, I don't understand")
+
+test_items = ['unlit torch']

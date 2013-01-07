@@ -21,6 +21,7 @@ The idea is that anything goes, but we do need a few house rules:
    
    interface.rst
    api_misc.rst
+   testing.rst
 
 If you prefer to learn by example, have a look at the `tiles already in the game
 <https://github.com/takluyver/weatbag/tree/master/weatbag/tiles>`_.
