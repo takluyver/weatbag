@@ -5,7 +5,6 @@ class Tile:
     def __init__(self):
         self.enemy_dead = False
         self.enemy_life = 2
-        self.player_life = 4
     
     def describe(self):
         if not self.enemy_dead: 
