@@ -53,6 +53,11 @@ class Tile:
 
         if direction=='s':
             return True
+        if direction=='n':
+            return True
+
+        print("There is no path leading in that direction.")
+        return False
     
     def action(self, player, do):
         if do[0] == "flee":
