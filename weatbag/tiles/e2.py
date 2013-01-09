@@ -22,6 +22,14 @@ class Tile:
     def action(self, player, do):
         if do[0] == "guess" and self.contents['unlit torch']: 
             try: 
+                if do[1] == "correctly": 
+                    print("You sly dog, you!")
+                    print("The dwarf hands you a torch! "
+                        "He then suddenly vanishes, leaving behind a pile of dust.")
+                    self.contents['unlit torch'] -= 1
+                    player.give('unlit torch')
+                    return
+
                 guess = int(do[1])
                 self.guess_count += 1
                 if guess > self.lucky_number: 

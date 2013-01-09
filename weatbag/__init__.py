@@ -9,6 +9,7 @@ class Player:
         self.name = name
         self.inventory = Counter()
         self.position = (0,0)
+        self.hit_points = 6
     
     def has(self, item):
         "Does the player have any of item?"
@@ -24,6 +25,24 @@ class Player:
             self.inventory[item] -= n
         else:
             raise KeyError(item)
+
+    def state_string(self): 
+        "Returns a string reporting the players health."
+        if self.hit_points >= 6: 
+            return "feeling great"
+        elif self.hit_points == 5: 
+            return "feeling good"
+        elif self.hit_points == 4: 
+            return "feeling ok"
+        elif self.hit_points == 3: 
+            return "feeling poor"
+        elif self.hit_points == 2: 
+            return "feeling very unhealthy"
+        elif self.hit_points == 1: 
+            return "nearly dead"
+        else: 
+            return "dead"
+
 
 class World:
     def __init__(self):
