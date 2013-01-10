@@ -51,13 +51,9 @@ class Tile:
                 print("You manage to flee!")
                 return True
 
-        if direction=='s':
-            return True
-        if direction=='n':
-            return True
+        return True
 
-        print("There is no path leading in that direction.")
-        return False
+    no_path_msg = "There is no path leading in that direction."
     
     def action(self, player, do):
         if do[0] == "flee":

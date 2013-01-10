@@ -101,7 +101,9 @@ def main():
     name = input("What is your name? ")
     player = Player(name)
     interact(player)
-    
+
+no_path_msg = "The undergrowth in that direction is impassable. You turn back."
+
 def interact(player):
     world = World()
     tile = world[player.position]
@@ -120,8 +122,7 @@ def interact(player):
             try:
                 tile = world[new_posn]
             except KeyError:
-                print("The undergrowth in that direction is impassable. "
-                      "You turn back.")
+                print(getattr(tile, 'no_path_msg', no_path_msg))
             else:
                 player.position = new_posn
                 tile.describe()

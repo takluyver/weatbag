@@ -52,3 +52,9 @@ Your module should define a class called ``Tile``, with the following interface:
       :param player: the active :class:`~weatbag.Player` instance
       :param direction: the direction the player is trying to leave, as a single
                         lowercase character, n/e/s/w
+
+   .. attribute:: no_path_msg
+   
+      *Optional.* The message to display if the player attempts to leave in a
+      direction where there is no tile. The default message says "The undergrowth
+      in that direction is impassable. You turn back."
