@@ -14,6 +14,7 @@ fight = {'fight', 'kill', 'hit', 'attack'}
 drop = {'drop'}
 take = {'pick', 'take', 'get', 'collect'}
 look = {'look', 'inspect', 'examine'}
+attack = {'attack', 'swing', 'hit', 'punch', 'fight'}
 inventory = {'inventory', 'possessions', 'belongings', 'bag'}
 surroundings = {'surroundings', 'around', 'scenery'}
 

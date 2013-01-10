@@ -9,6 +9,7 @@ class Player:
         self.name = name
         self.inventory = Counter()
         self.position = (0,0)
+        self.hit_points = 6
     
     def has(self, item):
         "Does the player have any of item?"
@@ -24,6 +25,24 @@ class Player:
             self.inventory[item] -= n
         else:
             raise KeyError(item)
+
+    def state_string(self): 
+        "Returns a string reporting the players health."
+        if self.hit_points >= 6: 
+            return "feeling great"
+        elif self.hit_points == 5: 
+            return "feeling good"
+        elif self.hit_points == 4: 
+            return "feeling ok"
+        elif self.hit_points == 3: 
+            return "feeling poor"
+        elif self.hit_points == 2: 
+            return "feeling very unhealthy"
+        elif self.hit_points == 1: 
+            return "nearly dead"
+        else: 
+            return "dead"
+
 
 class World:
     def __init__(self):
@@ -82,7 +101,9 @@ def main():
     name = input("What is your name? ")
     player = Player(name)
     interact(player)
-    
+
+no_path_msg = "The undergrowth in that direction is impassable. You turn back."
+
 def interact(player):
     world = World()
     tile = world[player.position]
@@ -101,8 +122,7 @@ def interact(player):
             try:
                 tile = world[new_posn]
             except KeyError:
-                print("The undergrowth in that direction is impassable. "
-                      "You turn back.")
+                print(getattr(tile, 'no_path_msg', no_path_msg))
             else:
                 player.position = new_posn
                 tile.describe()
