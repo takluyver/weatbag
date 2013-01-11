@@ -5,11 +5,12 @@ import re
 from . import action
 
 class Player:
+    MAX_HIT_POINT = 6
     def __init__(self, name):
         self.name = name
         self.inventory = Counter()
         self.position = (0,0)
-        self.hit_points = 6
+        self.hit_points = Player.MAX_HIT_POINT
     
     def has(self, item):
         "Does the player have any of item?"
