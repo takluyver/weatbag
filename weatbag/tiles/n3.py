@@ -63,6 +63,14 @@ class Tile:
         if do[0] in words.attack: 
             self.player_swing(player)
             self.enemy_swing(player)
-        
+        elif do[0] in words.use and do[1]=="berries":
+            if player.has("berries"):
+                player.take("berries")
+                player.hit_points += 2
+                if player.hit_points > player.MAX_HIT_POINT:
+                    player.hit_points = player.MAX_HIT_POINT
+                print("You ate the berries and feel better now.")
+            else:
+                print("Sorry you don't have any berries.")
         else:
             print("Sorry, I don't understand")
