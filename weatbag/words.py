@@ -6,7 +6,7 @@ e.g. This will recognise take, pick, get or collect::
     if do[0] in weatbag.words.take:
         #...
 """
-
+# Verbs
 move = {'move','walk','go'}
 give = {'give', 'feed', 'present'}
 use = {'eat', 'use', 'wear'}
@@ -15,7 +15,10 @@ drop = {'drop'}
 take = {'pick', 'take', 'get', 'collect'}
 look = {'look', 'inspect', 'examine'}
 attack = {'attack', 'swing', 'hit', 'punch', 'fight'}
+combine = {'combine', 'join', 'mix'}
+
+# Nouns
 inventory = {'inventory', 'possessions', 'belongings', 'bag'}
 surroundings = {'surroundings', 'around', 'scenery'}
 
-prepositions = {'up', 'down', 'on', 'under', 'in', 'at', 'to'}
+prepositions = {'up', 'down', 'on', 'under', 'in', 'at', 'to', 'with', 'and'}
