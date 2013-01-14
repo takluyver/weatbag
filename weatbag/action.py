@@ -4,16 +4,14 @@ from weatbag.items import combine
 
 def get_action():
     """Prompts for an action, splits it into words, and removes any prepositions.
-    
+
     movement actions will be represented by the move token object in this module,
     followed by a one-letter direction.
     """
     action = []
     while len(action) == 0:
         action = input('> ').lower().split()
-    for prep in words.prepositions.intersection(action):
-        action.remove(prep)
-
+        action = [w for w in action if w not in words.prepositions]
     return action
 
 move_directions = {'n','e','s','w','north','east','south','west'}
