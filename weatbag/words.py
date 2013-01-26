@@ -16,6 +16,7 @@ take = {'pick', 'take', 'get', 'collect'}
 look = {'look', 'inspect', 'examine'}
 attack = {'attack', 'swing', 'hit', 'punch', 'fight'}
 combine = {'combine', 'join', 'mix'}
+talk = {'talk', 'speak', 'converse'}
 
 # Nouns
 inventory = {'inventory', 'possessions', 'belongings', 'bag'}
