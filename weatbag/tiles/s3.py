@@ -4,24 +4,24 @@ class Tile:
   def __init__(self):
     self.short_man_here = True
     self.pants_on_fire = False
-    self.talk_or_fight = None
 
   def describe(self):
-    print( "You reach the top of the hill and look around the rock "
-           "formations. You find nothing but dust, a mud puddle, and" 
-           "withered shrubs.\n")
+    print( "You reach the top of the hill, pass through the arch "
+           "and look around the rock "
+           "formations. You find nothing but dust, a mud puddle, and " 
+           "withered shrubs.")
     if self.short_man_here:
       self.pants_on_fire = True
       print( "Just as you are returning to the path, a ball of fire "
              "hurtles through the air and explodes at your feet, setting "
              "one of your pant legs on fire. You hear high pitched cackling and "
-             "snorting.\n")
+             "snorting.")
     else:
       print( "You see the charred ground, "
              "reminding you of your encounter with the short man who set "
              "your pants on fire. That was a close one. There is a steep "
              "path leading down the hill to the North. To the south, the "
-             "hiltop path continues.\n")
+             "hiltop path continues.")
   
 
   def action(self, player, do):
@@ -30,8 +30,8 @@ class Tile:
 
     elif self.short_man_here:
       self.action_short_man(player, do)
-
-    elif self.short_man_gone:
+  
+    else:
       print("I'm sorry, I don't understand.")
 
   def leave(self, player, direction):
@@ -39,7 +39,7 @@ class Tile:
       print("Running now will only feed the fire!")
       return False
     elif self.short_man_here:
-      print("This fellow is dangerous. I better not turn my back on him.")
+      print("This fellow is dangerous. I'd better not turn my back on him.")
       return False
     else:
       return True
@@ -69,17 +69,20 @@ class Tile:
 
   def action_short_man(self, player, do):
     if do[0] in words.attack:
+      self.short_man_here = False
       print("Not one to be played around with, you charge the man. His amusement "
             "quickly turns to surprise and then fear as your size and "
             "determination become apparent. The man stumbles backwards and emits "
             "a yelp. Just before he hits the groud there is a dry popping noise "
             "a flash of light and the man is gone. ")
     elif do[0] in words.talk:
+      self.short_man_here = False
       print("\"What the hell was that?\" you growl.\n"
             "The man jumps deftly onto a boulder, looks at you over his "
             "shoulder for just a moment, and then jumps out of sight. "
             "You quickly climb after him, but he has somehow disappeared.")
-    self.short_man_here = False
+    else:
+      print("I'm sorry, I don't understand.")
 
         
 
