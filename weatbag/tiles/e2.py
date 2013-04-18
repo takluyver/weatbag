@@ -25,7 +25,8 @@ class Tile:
                 if do[1] == "correctly": 
                     print("You sly dog, you!")
                     print("The dwarf hands you a torch! "
-                        "He then suddenly vanishes, leaving behind a pile of dust.")
+                        "He then suddenly vanishes, "
+                        "leaving behind a pile of dust.")
                     self.contents['unlit torch'] -= 1
                     player.give('unlit torch')
                     return
@@ -40,12 +41,14 @@ class Tile:
                     print("You guessed my lucky number in %d guesses!" % 
                         (self.guess_count))
                     print("The dwarf hands you a torch! "
-                        "He then suddenly vanishes, leaving behind a pile of dust.")
+                        "He then suddenly vanishes, "
+                        "leaving behind a pile of dust.")
                     self.contents['unlit torch'] -= 1
                     player.give('unlit torch')
             except: 
                 print("Please try guessing a number, like 'guess 7'.")
         elif (do[0] in words.take):
-            print("You can't have my prize, you have to guess the lucky number!")
+            print("You can't have my prize, "
+                "you have to guess the lucky number!")
         else:
             print("Sorry, I don't understand.")
