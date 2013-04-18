@@ -8,8 +8,9 @@ class Tile:
     def describe(self):
         print("The path crosses a small stream.")
         if self.contents['berries']:
-            print("There are some berries hanging from a tree. They look edible. "
-                  "If you're hungry enough, anyway.")
+            print("There are some berries hanging from a tree. "
+                "They look edible. "
+                "If you're hungry enough, anyway.")
     
     def action(self, player, do):
         if (do[0] in words.take) and ('berries' in do):

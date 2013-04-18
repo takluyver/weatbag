@@ -6,8 +6,8 @@ class Tile:
         self.contents = {'match': 42}
     
     def describe(self):
-        print("You are standing in the mouth of a cave. The air feels cool and "
-            "is filled with the stench of rotting flesh. "
+        print("You are standing in the mouth of a cave. The air "
+            "feels cool and is filled with the stench of rotting flesh. "
             "A dark path leads to the north. An exit to the south.")
         if self.contents['match'] > 0:
             print("Someone has dropped a box of matches on the ground.")
@@ -17,8 +17,9 @@ class Tile:
             return True
         if player.has('flaming torch'):
             return True
-        print("You can't explore the cave without being able to see. You'll need "
-              "that stalwart friend of the adventurer, the flaming torch.")
+        print("You can't explore the cave without being able to see. "
+            "You'll need that stalwart friend of the adventurer, "
+            "the flaming torch.")
     
     def action(self, player, do):
         if (do[0] in words.take) and ('matches' in do):
