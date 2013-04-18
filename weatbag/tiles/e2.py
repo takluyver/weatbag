@@ -47,7 +47,7 @@ class Tile:
                     player.give('unlit torch')
             except: 
                 print("Please try guessing a number, like 'guess 7'.")
-        elif (do[0] in words.take):
+        elif (do[0] in words.take) and (self.contents['unlit torch'] == 1):
             print("You can't have my prize, "
                 "you have to guess the lucky number!")
         else:
