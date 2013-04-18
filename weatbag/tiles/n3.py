@@ -8,7 +8,7 @@ class Tile:
     
     def describe(self):
         if not self.enemy_dead: 
-            print("You encounter an orc! He's got a mean look, but you're a " 
+            print("You encounter an orc! He's got a mean look, but you're a "
                 "strong one. You should be able to take him. Attack or flee?")
         else: 
             print("You see an orc corpse here.")

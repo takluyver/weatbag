@@ -1,8 +1,9 @@
 class Tile:
     
     def describe(self):
-        print("The trees open out onto a beautiful beach. Small waves lap at the "
-        "sand. Ahead of you, the ocean stretches as far as you can see.")
+        print("The trees open out onto a beautiful beach. "
+            "Small waves lap at the sand. Ahead of you, "
+            "the ocean stretches as far as you can see.")
     
     def action(self, player, do):
         # Nothing to do here yet.
