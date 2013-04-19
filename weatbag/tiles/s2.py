@@ -5,7 +5,7 @@ class Tile:
   
   def describe(self):
     print("To the South, the foliage begins to thin and the path winds "
-        "forwards up a steep hillside. A rugged granite rockformation tops "
+        "forward up a steep hillside. A rugged granite rock formation tops "
         "the hill, its centerpiece two slabs of rock leaning together "
         "to form a crude arch." )
 
