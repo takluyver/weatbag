@@ -11,7 +11,7 @@ class Tile:
     
     def leave(self, player, direction):
         if direction=='w':
-            print("You've forgotten how to swim")
+            print("You've forgotten how to swim.")
             return False
         return True
             
