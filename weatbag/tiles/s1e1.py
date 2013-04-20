@@ -25,7 +25,7 @@ class Tile:
         if direction ==  's':
             print("Bugs are the enemy and must be crushed!\n"
                 "So you decide to follow the bug upstream.")
-                input()
+            input()
             return True
         else:
             if self.bug_leaves_this_time:
