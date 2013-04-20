@@ -22,7 +22,12 @@ class Tile:
         pass
 
     def leave(self, player, direction):
-        if direction ==  's':
+        restricted_directions = { 'w', 'e' }
+        if direction in restricted_directions:
+            print("The undergrowth in that direction "
+                "is impassable. You turn back.")
+            return False
+        elif direction ==  's':
             print("Bugs are the enemy and must be crushed!\n"
                 "So you decide to follow the bug upstream.")
             input()
