@@ -19,3 +19,12 @@ class Tile:
                 self.first_time = False
                 input()
             print("It's not a bug, it's a feature!")
+
+    def leave(self, player, direction):
+        restricted_directions = { 'w', 'e' }
+        if direction in restricted_directions:
+            print("The undergrowth in that direction "
+                "is impassable. You turn back.")
+            return False
+        else:
+            return True
