@@ -9,7 +9,10 @@ class Tile:
             "You see the bug.")
 
     def action(self, player, do):
-        if (do[0] in words.look) and ('bug' in do):
+        if ('bug' in do) and ( do[0] in words.attack or
+                               do[0] in words.look or
+                               do[0] == 'crush' or
+                               do[0] == 'fix' ):
             print("Traceback (most recent call last):\n"
                 " File \"computergame.py\", line 97397, in matrix.py\n"
                 "IndexError: list index out of range")
