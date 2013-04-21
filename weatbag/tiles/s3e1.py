@@ -1,7 +1,7 @@
 class Tile:
     
     def describe(self):
-        print("s1e2")
+        print("s3e1")
 
     def action(self, player, do):
         pass
