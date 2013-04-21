@@ -4,7 +4,7 @@ import weatbag
 
 class Tile:
     def __init__(self):
-        self.contents = {'bug': 1}
+        self.bug_is_here = True
         self.first_visit = True
         self.hasnt_gone_south = True
         pass
@@ -13,10 +13,10 @@ class Tile:
         print("There is a stream here. "
             "It runs from South to North.")
 
-        if self.contents['bug'] > 0:
+        if self.bug_is_here:
             print("You see a huge, ugly bug rush past you, "
                 "following the river South.")
-            self.contents['bug'] -= 1
+            self.bug_is_here = False
         else:
             print("You remember this is where you saw that bug going South.")
 
