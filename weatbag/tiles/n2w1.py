@@ -37,7 +37,7 @@ class Tile:
                         "Let's go!")
                         print("The brother and sister will take you to the "
                         "island.")
-                        challenge_not_completed = False
+                        self.challenge_not_completed = False
                     else:
                         print("We're afraid this is not the correct answer. "
                             "Try another one.")
@@ -47,13 +47,13 @@ class Tile:
                         "What kind of an asshole are you? Taking advantage of "
                         "little children?\nWe will transfer you for free.")
                     print("The brother and sister take you to the island!")
-                    challenge_not_completed = False
+                    self.challenge_not_completed = False
                 elif (do[0] in words.take) and (do[1] == "brother" or
                                                 do[1] == "boy"):
                     print("You bastard, take me down!\n"
                       "We will transfer you for free!")
                     print("The brother and sister take you to the island!")
-                    challenge_not_completed = False
+                    self.challenge_not_completed = False
                 elif (do[0] in words.take) and self.challenge_not_completed:
                     print("I told you we won't give you our raft, "
                         "you have to guess the correct amount of time!")
