@@ -5,6 +5,7 @@ class Tile:
     def __init__(self):
         self.contents = {'bug': 1}
         self.first_visit = True
+        self.hasnt_gone_south = True
         pass
 
     def describe(self):
@@ -27,11 +28,12 @@ class Tile:
             print("The undergrowth in that direction "
                 "is impassable. You turn back.")
             return False
-        elif direction ==  's':
+        elif direction ==  's' and hasnt_gone_south:
             print("Bugs are the enemy and must be crushed!\n"
                 "So you decide to follow the bug upstream.")
             input()
             self.first_visit = False
+            self.hasnt_gone_south = False
             return True
         else:
             if self.first_visit:
