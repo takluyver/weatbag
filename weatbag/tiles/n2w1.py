@@ -14,17 +14,19 @@ class Tile:
             print("They take you to the western island!")
 
     def challenge(self):
-        print("You ask them to give it to you.")
-        print("The little boy laughs  and replies: \nSo you think you "
-              "are brave enough to go to that island? Very well, but we cannot"
-              " give you our raft. "
+        print("You ask them to give it to you."
+              "The little boy laughs  and replies: \n"
+              "So you think you are brave enough to go to that island? "
+              "Very well, but we cannot give you our raft. "
               "What we can do is transfer you there ourselves. But first you "
-              "must answer this:\n\n")
-        print("Ignore weight and weather variables and listen carefully.\nIt "
-              "takes for me to transfer a person on the island exactly one hour.\n"
-              "It takes double the time for my sister.\nIf we combine our powers "
-              "in how many minutes will we transfer you on the island?\n")
-        print("To make a guess, type a number followed by 'minutes'")
+              "must answer this:\n\n"
+              "Ignore weight and weather variables and listen carefully.\n"
+              "It takes for me to transfer a person on the island exactly one "
+              "hour.\n"
+              "It takes double the time for my sister.\n"
+              "If we combine our powers "
+              "in how many minutes will we transfer you on the island?\n"
+              "To make a guess, type a number followed by 'minutes'")
 
     def action(self, player, do):
         if self.challenge_not_completed:
@@ -35,6 +37,7 @@ class Tile:
                         "Let's go!")
                         print("The brother and sister will take you to the "
                         "island.")
+                        challenge_not_completed = False
                     else:
                         print("We're afraid this is not the correct answer. "
                             "Try another one.")
@@ -44,18 +47,20 @@ class Tile:
                         "What kind of an asshole are you? Taking advantage of "
                         "little children?\nWe will transfer you for free.")
                     print("The brother and sister take you to the island!")
+                    challenge_not_completed = False
                 elif (do[0] in words.take) and (do[1] == "brother" or
                                                 do[1] == "boy"):
                     print("You bastard, take me down!\n"
                       "We will transfer you for free!")
                     print("The brother and sister take you to the island!")
+                    challenge_not_completed = False
                 elif (do[0] in words.take) and self.challenge_not_completed:
                     print("I told you we won't give you our raft, "
                         "you have to guess the correct amount of time!")
             except:
                 print("Please try guessing a number, like '42 minutes'.")
     def leave(self, player, direction):
-        if direction == "w":
+        if direction == "w" and self.challenge_not_completed:
             print ("You can't go there by swimming, that part is full of "
                  "electric eels.")
             return False
