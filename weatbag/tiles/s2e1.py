@@ -1,3 +1,4 @@
+# Second and final bug quest tile.
 from weatbag import words
 
 class Tile:
