@@ -2,20 +2,19 @@ from weatbag import words
 
 class Tile:
     def __init__(self):
-        self.contents = {'island ticket': 1}
+        self.challenge_not_completed = True
         self.minutes = "40"
 
     def describe(self):
-        if self.contents['island ticket']:
+        print("You see two children who you notice now are a boy and a girl.\n"
+              "They are playing and running around a raft.")
+        if self.challenge_not_completed:
             self.challenge()
         else:
-            print("The brother and sister have vanished. You see a line of "
-                  "trees across the sand.")
+            print("They take you to the western island!")
 
     def challenge(self):
-        print("You aproach the children who you see now are a boy and a girl.\n"
-              "They are playing and running around a raft.\n"
-              "You ask them to give it to you.")
+        print("You ask them to give it to you.")
         print("The little boy laughs  and replies: \nSo you think you "
               "are brave enough to go to that island? Very well, but we cannot"
               " give you our raft. "
@@ -28,7 +27,7 @@ class Tile:
         print("To make a guess, type a number followed by 'minutes'")
 
     def action(self, player, do):
-        if ( self.contents["island ticket"] > 0 ):
+        if self.challenge_not_completed:
             try:
                 if do[1] == "minutes": 
                     if do[0] == self.minutes:
@@ -36,8 +35,6 @@ class Tile:
                         "Let's go!")
                         print("The brother and sister will take you to the "
                         "island.")
-                        self.contents['island ticket'] -= 1
-                        player.give('island ticket')
                     else:
                         print("We're afraid this is not the correct answer. "
                             "Try another one.")
@@ -47,18 +44,12 @@ class Tile:
                         "What kind of an asshole are you? Taking advantage of "
                         "little children?\nWe will transfer you for free.")
                     print("The brother and sister take you to the island!")
-                    self.contents['island ticket'] -= 1
-                    player.give('island ticket')
-
                 elif (do[0] in words.take) and (do[1] == "brother" or
                                                 do[1] == "boy"):
                     print("You bastard, take me down!\n"
                       "We will transfer you for free!")
                     print("The brother and sister take you to the island!")
-                    self.contents['island ticket'] -= 1
-                    player.give('island ticket')
-
-                elif (do[0] in words.take) and (self.contents['island ticket'] == 1):
+                elif (do[0] in words.take) and self.challenge_not_completed:
                     print("I told you we won't give you our raft, "
                         "you have to guess the correct amount of time!")
             except:
@@ -70,6 +61,5 @@ class Tile:
             return False
         else:
             return True
-
 
 
