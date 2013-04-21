@@ -7,3 +7,11 @@ class Tile:
     
     def action(self, player, do):
         pass
+
+    def leave(self, player, direction):
+        if direction == "w":
+            print ("You can't go there by swimming, that part is full of "
+                 "electric eels.")
+            return False
+        else:
+            return True
