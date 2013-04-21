@@ -1,3 +1,4 @@
+# First bug quest tile.
 from weatbag import words
 import weatbag
 
@@ -19,9 +20,13 @@ class Tile:
         else:
             print("You remember this is where you saw that bug going South.")
 
+    # Nothing to do here.
     def action(self, player, do):
         pass
 
+    # Player can only exit the bug quest going back North.
+    # Player gets different messages the first time he 
+    # exits this tile, depending on his direction.
     def leave(self, player, direction):
         restricted_directions = { 'w', 'e' }
         if direction in restricted_directions:
