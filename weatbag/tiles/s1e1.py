@@ -4,7 +4,7 @@ import weatbag
 class Tile:
     def __init__(self):
         self.contents = {'bug': 1}
-        self.bug_leaves_this_time = True
+        self.first_visit = True
         pass
 
     def describe(self):
@@ -31,11 +31,12 @@ class Tile:
             print("Bugs are the enemy and must be crushed!\n"
                 "So you decide to follow the bug upstream.")
             input()
+            self.first_visit = False
             return True
         else:
-            if self.bug_leaves_this_time:
+            if self.first_visit:
                 print("Bugs do not interest you very much.\n"
                     "Lets get out of here.")
-                self.bug_leaves_this_time = False
+                self.first_visit = False
                 input()
             return True
