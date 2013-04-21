@@ -26,7 +26,7 @@ class Tile:
 
     # Player can only exit the bug quest going back North.
     # Player gets different messages the first time he 
-    # exits this tile, depending on their direction.
+    # exits this tile, depending on his direction.
     def leave(self, player, direction):
         restricted_directions = { 'w', 'e' }
         if direction in restricted_directions:
