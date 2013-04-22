@@ -7,8 +7,8 @@ class Tile:
 
     def describe(self):
         if self.opendoor:
-            print("The door is open and the kitties are playing with their "
-                  "momcat!")
+            print("The hut's door is open and the kitties are playing with 
+                  "their momcat!")
         else:
             print("You are standing in front of the hut's door. The hut looks "
                   "very small and you wonder who could live there... It has a "
@@ -29,7 +29,7 @@ class Tile:
             print("Sorry, I don't understand.")    
             
     def leave(self, player, direction):
-        if direction=='w' and player.has('doorknob'):
+        if direction=='w' and not self.opendoor:
             print("First you need to enter the hut.")
             return False
         else:
