@@ -33,7 +33,7 @@ class Tile:
             print("The undergrowth in that direction "
                 "is impassable. You turn back.")
             return False
-        elif direction ==  's' and hasnt_gone_south:
+        elif direction ==  's' and self.hasnt_gone_south:
             print("Bugs are the enemy and must be crushed!\n"
                 "So you decide to follow the bug upstream.")
             input()
