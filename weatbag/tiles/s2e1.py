@@ -25,7 +25,7 @@ class Tile:
             print("It's not a bug, it's a feature!")
 
     def leave(self, player, direction):
-        restricted_directions = { 'w', 'e' }
+        restricted_directions = { 'w', 'e', 's' }
         if direction in restricted_directions:
             print("The undergrowth in that direction "
                 "is impassable. You turn back.")
