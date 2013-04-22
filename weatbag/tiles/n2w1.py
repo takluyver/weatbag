@@ -66,5 +66,3 @@ class Tile:
             return False
         else:
             return True
-
-
