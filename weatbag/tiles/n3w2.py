@@ -28,9 +28,6 @@ class Tile:
                 player.take('catfood') 
                 print("Great! Now we can sail!")
                 self.give_catfood = True
-            else:
-                print("No boat for you if you don't give me tha catfood!")
-                self.give_catfood = False
         else:
             print("Sorry, I don't understand.")
     
