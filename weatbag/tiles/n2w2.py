@@ -1,15 +1,18 @@
 class Tile:
    def describe(self):
-       print("\nYou are now on the island. In front of you there are some trees "
-       "and a small path.\nFeeling adventurous?")
+       print("You are now on the island. In front of you there are some trees "
+       "and a small path.\nFeeling adventurous?\n")
    
    def action(self, player, do):
        print("Sorry, I don't understand")
        
    def leave(self, player, direction):
        if direction == "e":
-           print ("\nYou can't go back by swimming, that part is full of "
-                "electric eels.")
+           print("You can't go back by swimming, that part is full of "
+                "electric eels.\n")
+           return False
+       elif direction == "s":
+           print("I'm afraid I can't let you go there Dave.\n")
            return False
        else:
            return True
