@@ -3,7 +3,7 @@ from weatbag.utils import transfer
 
 class Tile:
     def __init__(self):
-        self.contents = {'catfood': 1}
+        self.contents = {'catfood': 2}
     
     def describe(self):
         if self.contents['catfood']:
@@ -20,7 +20,7 @@ class Tile:
             print("Sorry, I don't understand.")       
            
     def take_catfood(self, player):
-        if transfer('catfood', self.contents, player.inventory):
+        if transfer('catfood', self.contents, player.inventory, n=2):
             print("You did wise. You took the catfood!")
         else:
             print("There is nothing here.")
