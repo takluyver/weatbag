@@ -19,7 +19,7 @@ class Tile:
                   "across if you like!")
     
     def action(self, player, do):
-        if (do[0] in words.use or do[0] in words.give) and do[1]=='catfood':           
+        if (do[0] in words.use or do[0] in words.give) and do[1]=='catfood':
 
 #   I only added words.use because player might
 #   use the word "use" insteed of "give".
