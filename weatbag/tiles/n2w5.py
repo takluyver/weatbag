@@ -7,8 +7,8 @@ class Tile:
     
     def describe(self):
         if self.contents['catfood']:
-            print("You look around and you see a shelf with catfood cans.\n"
-                  "I don't know about you, but a catfood can is always handy! "
+            print("\nYou look around and you see a shelf with catfood cans.\n"
+                  "I don't know about you, but a catfood can is always handy!\n"
                   "Never know when you'll need to feed a kitty!")
 
     def action(self, player, do):
@@ -21,7 +21,7 @@ class Tile:
            
     def take_catfood(self, player):
         if transfer('catfood', self.contents, player.inventory, n=2):
-            print("You did wise. You took the catfood!")
+            print("\nYou did wise. You took the catfood!")
         else:
-            print("There is nothing here.")
+            print("\nThere is nothing here.")
 

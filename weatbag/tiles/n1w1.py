@@ -1,7 +1,8 @@
 class Tile:
     def describe(self):
-        print("There is a small island northwest.\n"
-            "Unfortunatelly, you can't swim so you need a transport to go there.\n"
+        print("\nThere is a small island northwest.\n"
+            "Unfortunatelly, you can't swim because the sea is full of "
+            "electric eels so you need a transport to go there.\n"
             "Luckilly to the north you see 2 children with a raft sitting "
             "under a tree." )
     
@@ -10,7 +11,7 @@ class Tile:
 
     def leave(self, player, direction):
         if direction == "w":
-            print ("You can't go there by swimming, that part is full of "
+            print ("\nYou can't go there by swimming, that part is full of "
                  "electric eels.")
             return False
         else:

@@ -1,6 +1,6 @@
 class Tile:
    def describe(self):
-       print("You are walking through the trees. It looks like the path you "
+       print("\nYou are walking through the trees. It looks like the path you "
        "took leads to a small wooden hut.\nYou saw a tree fall and it didn't "
        "make any sound and WOW... that was weired because you were there and "
        "observed it!")
@@ -9,5 +9,5 @@ class Tile:
        # raises questions regarding observation and knowledge of reality.
               
    def action(self, player, do):
-       print("Sorry, I don't understand")
+       print("\nSorry, I don't understand")
 
