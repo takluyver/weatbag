@@ -7,7 +7,7 @@ class Tile:
 
     def describe(self):
         if self.opendoor:
-            print("The hut's door is open and the kitties are playing with 
+            print("The hut's door is open and the kitties are playing with " 
                   "their momcat!")
         else:
             print("You are standing in front of the hut's door. The hut looks "
