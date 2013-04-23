@@ -10,4 +10,11 @@ class Tile:
               
    def action(self, player, do):
        print("\nSorry, I don't understand")
-
+       
+   def leave(self, player, direction):
+       if direction == "s":
+           print("STAHP! Hammer Time!\n(Meaning you just can't go to that "
+                 "direction yet. Sorry! :))\n")
+           return False
+       else:
+           return True
