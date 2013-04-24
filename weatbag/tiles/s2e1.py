@@ -1,7 +1,7 @@
 # Second and final bug quest tile.
 #
 # To future hackers:
-# This is part of a short quest which beggins by
+# This is part of a short quest which begins by
 # going South from e1. Plase consider this when coding neighbouring tiles.
 # thnx :)
 from weatbag import words
