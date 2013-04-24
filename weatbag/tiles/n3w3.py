@@ -24,3 +24,10 @@ class Tile:
             print("\nYou pick up the doorknob.")
         else:
             print("\nThere is nothing here.")
+            
+    def leave(self, player, direction):
+        if direction == "n":
+            print("Oops. You can't go there. There is a rocky wall.\n")
+            return False
+        else:
+            return True
