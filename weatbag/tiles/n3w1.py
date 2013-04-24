@@ -1,18 +1,18 @@
 class Tile:
     def describe(self):
-        print("\nThe beach is quiet. On the south are children playing.")
+        print("The beach is quiet. On the south are children playing.\n")
     
     def action(self, player, do):
-        print("\nSorry, I don't understand")
+        print("wo0t w0ot?! o_O")
         
     def leave(self, player, direction):
         if direction == 'w':
-            print("\nI'm afraid you can't go west.\nThe sea on that part is "
-                  "fool of electric eels and you don't have a transport.")
+            print("I'm afraid you can't go west.\nThe sea on that part is "
+                  "fool of electric eels and you don't have a transport.\n")
             return False
         elif direction == 'e':
-            print("\nThere is the side of a cave in front of you.\nYou can't go "
-                  "east.")
+            print("There is the side of a cave in front of you.\nYou can't go "
+                  "east.\n")
             return False
         elif direction == 'n':
             print("               ,               , \n"

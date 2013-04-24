@@ -4,7 +4,7 @@ class Tile:
        "and a small path.\nFeeling adventurous?\n")
    
    def action(self, player, do):
-       print("Sorry, I don't understand")
+       print("Sorry, wat?!")
        
    def leave(self, player, direction):
        if direction == "e":

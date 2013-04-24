@@ -7,23 +7,23 @@ class Tile:
     
     def describe(self):
         if self.contents['doorknob']:
-            print("\nAs you walk through the path you find something shiny on "
-            "the ground beside some rocks.\nIt looks like a brass doorknob.")
+            print("As you walk through the path you find something shiny on "
+            "the ground beside some rocks.\nIt looks like a brass doorknob.\n")
         else:
-            print("\nThere is nothing to do here, all you see is your path and "
-            "the trees around!")
+            print("There is nothing to do here, all you see is your path and "
+            "the trees around!\n")
     def action(self, player, do):
         if (do[0] in words.take) and ('doorknob' in do):
             self.take_doorknob(player)
             
         else:
-            print("\nSorry, I don't understand.")
+            print("Sorry, I don't understand.\n")
     
     def take_doorknob(self, player):
         if transfer('doorknob', self.contents, player.inventory):
-            print("\nYou pick up the doorknob.")
+            print("You pick up the doorknob.\n")
         else:
-            print("\nThere is nothing here.")
+            print("There is nothing here.\n")
             
     def leave(self, player, direction):
         if direction == "n":
