@@ -13,13 +13,15 @@ class Tile:
             print("Someone has dropped a box of matches on the ground.")
     
     def leave(self, player, direction):
-        if direction=='s':
+        if direction=='n' and player.has('flaming torch'):
             return True
-        if player.has('flaming torch'):
-            return True
-        print("You can't explore the cave without being able to see. "
+        elif direction=='n' and not player.has('flaming torch'):
+            print("You can't explore the cave without being able to see. "
             "You'll need that stalwart friend of the adventurer, "
             "the flaming torch.")
+            return False
+        else:
+            return True
     
     def action(self, player, do):
         if (do[0] in words.take) and ('matches' in do):
