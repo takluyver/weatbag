@@ -7,3 +7,13 @@ class Tile:
                    
    def action(self, player, do):
        print("\nSorry, I don't understand")
+       
+   def leave(self, player, direction):
+       if direction == "n":
+           print("No trespasing. Violators will vanish without a trace.\n")
+           return False
+       elif direction == "w":
+           print("No trespasing. Violators will vanish without a trace.\n")
+           return False
+       else:
+           return True
