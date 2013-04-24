@@ -20,7 +20,10 @@ class Tile:
                                do[0] == 'crush' or
                                do[0] == 'fix' ):
             print("Traceback (most recent call last):\n"
-                " File \"computergame.py\", line 97397, in matrix.py\n"
+                "  File \"matrix.py\", line 97397, in <module>\n"
+                "    main()\n"
+                "  File \"slacking_off.py\", line 23934, in main\n"
+                "    print(excuse[723])\n"
                 "IndexError: list index out of range")
             input()
             if self.first_time == True:
