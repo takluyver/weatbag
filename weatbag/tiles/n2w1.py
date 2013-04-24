@@ -11,7 +11,7 @@ class Tile:
         if self.challenge_not_completed:
             self.challenge()
         else:
-            print("\nThey take you to the western island!")
+            print("\nThe children take you to the western island!")
 
     def challenge(self):
         print("You ask them to give it to you."
