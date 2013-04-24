@@ -27,7 +27,7 @@ class Tile:
     def leave(self,player,direction):
         if direction ==  's':
             print("You decide the path is too boring for you,\n"
-                "so you follow the stream south, looking for adventure!")
+                "so you follow the stream south, looking for adventure...")
             input()
             return True
         else:
