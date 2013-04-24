@@ -15,7 +15,6 @@ class Tile:
         if (do[0] in words.take) and ('catfood' in do):
             self.take_catfood(player) 
             self.contents['catfood'] -= 1
- 
         else:
             print("Sorry, I don't understand.")       
            
@@ -25,3 +24,9 @@ class Tile:
         else:
             print("\nThere is nothing here.")
 
+    def leave(self, player, direction):
+        if direction == 'w'or direction == 's' or direction == 'n':
+            print("Area 51. No trespassing beyond this point.")
+            return False
+        else:
+            return True
