@@ -39,11 +39,15 @@ class Tile:
     
 
     def leave(self, player, direction):
-        if direction=='e'and not self.give_catfood:
+        if direction == 'e'and not self.give_catfood:
             print("\nYou can't swim, remember the electric eels? You need a "
                   "transport to go across.")
             return False
-        return True
+        if direction == 'n':
+            print("Nothing to do there.\n")
+            return False
+        else:
+            return True
             
 #two catfoods!
 test_items = ['catfood','catfood']
