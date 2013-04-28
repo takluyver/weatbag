@@ -6,15 +6,16 @@ class Tile:
         self.contents = {'catfood': 2}
     
     def describe(self):
-        if self.contents['catfood']:
+        if self.contents['catfood']>0:
             print("You look around and you see a shelf with catfood cans.\n"
                   "I don't know about you, but a catfood can is always handy!\n"
                   "Never know when you'll need to feed a kitty!\n")
+        else:
+            print("You see an empty self.")
 
     def action(self, player, do):
         if (do[0] in words.take) and ('catfood' in do):
             self.take_catfood(player) 
-            self.contents['catfood'] -= 1
         else:
             print("Sorry, I don't understand.\n")
            
