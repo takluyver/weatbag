@@ -64,5 +64,8 @@ class Tile:
             print ("You can't go there by swimming, that part is full of "
                  "electric eels.\n")
             return False
+        elif direction == 'e'
+            print("There is a cave this way. You can't go from here though.")
+                return False     
         else:
             return True
