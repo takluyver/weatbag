@@ -9,10 +9,10 @@ class Tile:
         if not self.give_catfood:
             print("You are at the beach and there is an old man with an "
                   "enormous beard that is getting his little boat ready to go "
-                  "across to the mainland.\nNaturally, you are asking him to "
+                  "across to the mainland.\nNaturally, you ask him to "
                   "take you in his boat.\nThe old man replies:\nOf course I "
                   "can take you with me, my dear adventurer but first I need "
-                  "some catfood so I can feed the kitties across in the "
+                  "some catfood so I can feed the kitties across on the "
                   "mainland!\n")
         else:
             print("There's the old fisherman with his boat, he can take you "

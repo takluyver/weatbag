@@ -11,7 +11,7 @@ class Tile:
                   "their momcat!\n")
         else:
             print("You are standing in front of the hut's door. The hut "
-                  "looks very small and you wonder who could live there...\n"
+                  "looks very small and you wonder who could live here...\n"
                   "It has a door but you can't open it because the doorknob "
                   "is missing.\n") 
     
@@ -21,7 +21,7 @@ class Tile:
                 player.take('doorknob') 
                 print("Doorknob fits fine, clicks and voila... Door is open!\n"
                       "\nYou are in a cozy living room with a cat and 5 kittens"
-                      " resting on a couch.\nThere is another room at west.\n")
+                      " resting on a couch.\nThere is another room to the west.\n")
                 self.opendoor = True
             else:
                 print("You'll need a doorknob to open the door.\n")

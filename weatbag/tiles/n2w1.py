@@ -18,14 +18,13 @@ class Tile:
               "The little boy laughs  and replies: \n"
               "So you think you are brave enough to go to that island? "
               "Very well, but we cannot give you our raft. "
-              "What we can do is transfer you there ourselves. But first you "
+              "What we can do is transport you there ourselves. But first you "
               "must answer this:\n\n"
               "Ignore weight and weather variables and listen carefully.\n"
-              "It takes for me to transfer a person on the island exactly one "
-              "hour.\n"
-              "It takes double the time for my sister.\n"
-              "If we combine our powers, "
-              "how many minutes will it take to transfer you on the island?\n"
+              "It takes me exactly one hour to transport a person to the island.\n"
+              "It takes my sister double that time.\n"
+              "If we combine our power, "
+              "how many minutes will it take to transport you to the island?\n"
               "To make a guess, type a number followed by 'minutes'.\n")
 
     def action(self, player, do):
