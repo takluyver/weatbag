@@ -67,9 +67,5 @@ class Tile:
             print ("You can't go there by swimming, that part is full of "
                    "electric eels.\n")
             return False
-        elif direction == 'e':
-            print("The undregrowth in that direction is impassable. "
-                  "You turn back.")
-            return False
         else:
             return True
