@@ -42,7 +42,10 @@ class Tile:
         print("You are %s" % (player.state_string()))
     
     def leave(self, player, direction):
-        if not self.enemy_dead: 
+        if direction =='w':
+            print("Cave wall this way.")
+            return False
+        elif not self.enemy_dead: 
             if not random.choice((True,False)): 
                 print("The orc blocks your way!")
                 self.enemy_swing(player)
@@ -50,7 +53,6 @@ class Tile:
             else: 
                 print("You manage to flee!")
                 return True
-
         return True
 
     no_path_msg = "There is no path leading in that direction."
