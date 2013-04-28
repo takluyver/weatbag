@@ -1,7 +1,14 @@
 class Tile:
+    def __init__(self):
+        self.first_visit = True
+
     def describe(self):
-        print("You are now on the island. In front of you there are some trees "
-              "and a small path.\nFeeling adventurous?\n")
+        if self.first_visit:
+            print("You are now on the island. In front of you there are "
+                  "some trees and a small path.\nFeeling adventurous?\n")
+            self.first_visit = False
+        else:
+            print("The beach is quiet. Nothing seems to be going on.")
 
     def action(self, player, do):
         print("Sorry, wat?!")
