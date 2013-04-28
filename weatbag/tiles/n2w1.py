@@ -6,8 +6,8 @@ class Tile:
         self.minutes = "40"
 
     def describe(self):
-        print("\nYou see two children who you notice now are a boy and a girl. "
-              "\nThey are playing and running around a raft.")
+        print("You see two children who you notice now are a boy and a girl.\n"
+              "They are playing and running around a raft.\n")
         if self.challenge_not_completed:
             self.challenge()
         else:
