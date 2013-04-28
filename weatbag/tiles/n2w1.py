@@ -26,14 +26,14 @@ class Tile:
               "It takes my sister double that time.\n"
               "If we combine our power, "
               "how many minutes will it take to transport you to the island?\n"
-              "To make a guess, type a number followed by 'minutes'.\n")
+              "For your answer, type a number followed by 'minutes'.\n")
 
     def action(self, player, do):
         if self.challenge_not_completed:
             try:
                 if do[1] == "minutes": 
                     if do[0] == self.minutes:
-                        print("Your guess have pleased me and my sister! "
+                        print("Your answer has pleased me and my sister! "
                               "\nLet's go!")
                         print("The brother and sister will take you to the "
                               "island.\n")
@@ -59,9 +59,9 @@ class Tile:
                     self.challenge_not_completed = False
                 elif (do[0] in words.take) and self.challenge_not_completed:
                     print("I told you we won't give you our raft, "
-                          "you have to guess the correct amount of time!\n")
+                          "you have to find the correct amount of time!\n")
             except:
-                print("Please try guessing a number, like '42 minutes'\n.")
+                print("Please try typing a number, like '42 minutes'\n.")
     def leave(self, player, direction):
         if direction == "w" and self.challenge_not_completed:
             print ("You can't go there by swimming, that part is full of "
