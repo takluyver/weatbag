@@ -18,10 +18,6 @@ class Tile:
                   "You'll need that stalwart friend of the adventurer, "
                   "the flaming torch.")
             return False
-        elif direction == 'w':
-            print("The undergrowth in that direction is impassable. "
-                  "You turn back.")
-            return False
         else:
             return True
     
