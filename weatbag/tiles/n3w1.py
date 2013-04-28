@@ -34,8 +34,8 @@ class Tile:
                   " \ \-.__)    ``--._)       (_.--``    (__.-/ / \n"
                   "  '.'-.__.-.                       .-.__.-'.' \n"
                   "    '-...-'                        '-...-' \n")
-            print("A wall of kitties doesn't allow you to go North.\nBut that "
-                  "doesn't make you mad... You can't be mad at kitties, "
-                  "rite?!\n")
+            print("A wall of kitties doesn't allow you to go North.\n"
+                  "But that doesn't make you mad... "
+                  "You can't be mad at kitties, rite?!\n")
             return False
         return True

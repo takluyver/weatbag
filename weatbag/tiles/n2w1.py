@@ -11,7 +11,7 @@ class Tile:
         if self.challenge_not_completed:
             self.challenge()
         else:
-            print("\nThe children take you to the western island!")
+            print("\nThe children will take you to the western island!")
 
     def challenge(self):
         print("You ask them to give it to you."
@@ -21,7 +21,8 @@ class Tile:
               "What we can do is transport you there ourselves. But first you "
               "must answer this:\n\n"
               "Ignore weight and weather variables and listen carefully.\n"
-              "It takes me exactly one hour to transport a person to the island.\n"
+              "It takes me exactly one hour to transport a person to "
+              "the island.\n"
               "It takes my sister double that time.\n"
               "If we combine our power, "
               "how many minutes will it take to transport you to the island?\n"
@@ -42,29 +43,33 @@ class Tile:
                               "Try another one.\n")
                 elif (do[0] in words.take) and (do[1] == "sister" or 
                                                 do[1] == "girl"):
-                    print("You bastard! Leave my sister down!\n"
-                         "What kind of an asshole are you? Taking advantage of "
-                         "little children?\nWe will transfer you for free.\n")
-                    print("The brother and sister take you to the island!\n")
+                    print("You bastard! Let my sister down!\n"
+                          "What kind of an asshole are you? "
+                          "Taking advantage of little children?\n"
+                          "We will transport you for free.\n")
+                    print("The brother and sister will take you "
+                          "to the island!\n")
                     self.challenge_not_completed = False
                 elif (do[0] in words.take) and (do[1] == "brother" or
                                                 do[1] == "boy"):
-                    print("You bastard, take me down!\n"
-                          "We will transfer you for free!\n")
-                    print("The brother and sister take you to the island!\n")
+                    print("You bastard, put me down!\n"
+                          "We will trasnport you for free!\n")
+                    print("The brother and sister will take you "
+                          "to the island!\n")
                     self.challenge_not_completed = False
                 elif (do[0] in words.take) and self.challenge_not_completed:
                     print("I told you we won't give you our raft, "
-                        "you have to guess the correct amount of time!\n")
+                          "you have to guess the correct amount of time!\n")
             except:
                 print("Please try guessing a number, like '42 minutes'\n.")
     def leave(self, player, direction):
         if direction == "w" and self.challenge_not_completed:
             print ("You can't go there by swimming, that part is full of "
-                 "electric eels.\n")
+                   "electric eels.\n")
             return False
         elif direction == 'e':
-            print("There is a cave this way. You can't go from here though.")
-            return False     
+            print("The undregrowth in that direction is impassable. "
+                  "You turn back.")
+            return False
         else:
             return True

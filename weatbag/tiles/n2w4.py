@@ -20,8 +20,9 @@ class Tile:
             if player.has('doorknob'):
                 player.take('doorknob') 
                 print("Doorknob fits fine, clicks and voila... Door is open!\n"
-                      "\nYou are in a cozy living room with a cat and 5 kittens"
-                      " resting on a couch.\nThere is another room to the west.\n")
+                      "\nYou are in a cozy living room with a cat and five "
+                      "kittens resting on a couch.\n"
+                      "There is another room to the west.\n")
                 self.opendoor = True
             else:
                 print("You'll need a doorknob to open the door.\n")
