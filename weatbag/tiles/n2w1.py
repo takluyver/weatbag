@@ -62,6 +62,9 @@ class Tile:
                           "you have to find the correct amount of time!\n")
             except:
                 print("Please try typing a number, like '42 minutes'\n.")
+        else:
+            print("Sorry, I don't understand.")
+            
     def leave(self, player, direction):
         if direction == "w" and not self.challenge_completed:
             print ("You can't go there by swimming, that part is full of "
