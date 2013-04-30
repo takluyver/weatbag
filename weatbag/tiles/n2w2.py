@@ -4,14 +4,19 @@ class Tile:
 
     def describe(self):
         if self.first_visit:
-            print("You are now on the island. In front of you there are "
-                  "some trees and a small path.\nFeeling adventurous?\n")
+            print("You are now on the island. The children are returning back "
+                  "to the mainland with their raft.\n"
+                  "In front of you there are some trees and a small path.\n"
+                  "Feeling adventurous?\n")
             self.first_visit = False
         else:
             print("The beach is quiet. Nothing seems to be going on.")
 
     def action(self, player, do):
-        print("Sorry, wat?!")
+        if do[0] in ('Yes', 'yes', 'y', 'Y'):
+            print("Awesome! Follow the path!")
+        else:
+            print("Sorry, wat?!")
 
     def leave(self, player, direction):
         if direction == "e":
