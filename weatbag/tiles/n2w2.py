@@ -13,7 +13,7 @@ class Tile:
             print("The beach is quiet. Nothing seems to be going on.")
 
     def action(self, player, do):
-        if do[0] in ('Yes', 'yes', 'y', 'Y', 'Yup', 'yup'):
+        if do[0] in ('Yes', 'yes', 'y', 'Y', 'Yup', 'yup', 'ye', 'Ye'):
             print("Awesome! Follow the path!")
         elif do[0] in ('No', 'no', 'n', 'N', 'Nope', 'nope'):
             print("You might be in the wrong place then. Pack your stuff and "
