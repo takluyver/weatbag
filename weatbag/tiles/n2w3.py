@@ -4,8 +4,8 @@ class Tile:
         self.tree_fallen = False
 
     def describe(self):
-        print("You are walking through the trees. It looks like the path you "
-              "took leads to a small wooden hut.\n")
+        print("You are walking through the trees. It looks like the path on "
+              "your west leads to a small wooden hut.\n")
         if not self.first_visit and not self.tree_fallen:
             print("You saw a tree fall and it didn't make any sound and "
                   "WOW... that was weird because you were there and "
