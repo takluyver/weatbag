@@ -23,3 +23,7 @@ inventory = {'inventory', 'possessions', 'belongings', 'bag'}
 surroundings = {'surroundings', 'around', 'scenery'}
 
 prepositions = {'up', 'down', 'on', 'under', 'in', 'at', 'to', 'with', 'and'}
+
+# yes/no
+yes = {'yes','y','yup','ye'}
+no = {'no','n','nope'}

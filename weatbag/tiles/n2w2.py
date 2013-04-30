@@ -1,3 +1,5 @@
+from weatbag import words
+
 class Tile:
     def __init__(self):
         self.first_visit = True
@@ -13,9 +15,9 @@ class Tile:
             print("The beach is quiet. Nothing seems to be going on.")
 
     def action(self, player, do):
-        if do[0] in ('Yes', 'yes', 'y', 'Y', 'Yup', 'yup', 'ye', 'Ye'):
+        if do[0] in words.yes:
             print("Awesome! Follow the path!")
-        elif do[0] in ('No', 'no', 'n', 'N', 'Nope', 'nope'):
+        elif do[0] in words.no:
             print("You might be in the wrong place then. Pack your stuff and "
                   "quit the game.")
         else:
