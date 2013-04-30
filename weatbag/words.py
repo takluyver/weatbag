@@ -25,5 +25,5 @@ surroundings = {'surroundings', 'around', 'scenery'}
 prepositions = {'up', 'down', 'on', 'under', 'in', 'at', 'to', 'with', 'and'}
 
 # yes/no
-yes = {'yes','Yes','y','Y','Yup','yup','ye','Ye'}
-no = {'no','No','n','N','Nope','nope','NOPE'}
+yes = {'yes','y','yup','ye'}
+no = {'no','n','nope'}
