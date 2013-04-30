@@ -8,7 +8,7 @@ class Tile:
               "took leads to a small wooden hut.\n")
         if not self.first_visit and not self.tree_fallen:
             print("You saw a tree fall and it didn't make any sound and "
-                  "WOW... that was weired because you were there and "
+                  "WOW... that was weird because you were there and "
                   "observed it!\n")
             self.tree_fallen = True
         self.first_visit = False    
