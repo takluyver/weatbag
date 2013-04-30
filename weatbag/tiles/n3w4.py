@@ -10,10 +10,7 @@ class Tile:
        print("Sorry, I don't understand.\n")
        
    def leave(self, player, direction):
-       if direction == "n":
-           print("No trespasing. Violators will vanish without a trace.\n")
-           return False
-       elif direction == "w":
+       if direction in ('n', 'w'):
            print("No trespasing. Violators will vanish without a trace.\n")
            return False
        else:
