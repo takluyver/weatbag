@@ -1,8 +1,8 @@
 class Tile:
 
     def describe(self):
-        print("The beach is really quiet and you can hear and see the "
-                  "seagulls on the sea.")
+        print("The beach is really quiet and you can hear and see the seagulls "
+              "on the sea.")
 
     def action(self, player, do):
         print("What is this giberish?")
