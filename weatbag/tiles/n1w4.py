@@ -34,7 +34,7 @@ class Tile:
         #To describe 11, you have two 1's, or 21. Now you have one 2 and one 1, 
         #so the next number is 1211. The solution is to simply continue 
         #describing the previous number using only numbers.\n")
-     
+        
     def action(self, player, do):
         if not self.challenge_completed:
             if do[0] == self.sequence:
@@ -46,6 +46,8 @@ class Tile:
                 self.contents['neko'] -= 1
                 player.give('neko')
                 self.challenge_completed = True
+            else:
+                print("Wut? Try h4rd3r st00p3d hum4n!")
         else:
             print("I don't understand...")
             
