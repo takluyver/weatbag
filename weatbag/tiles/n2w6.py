@@ -12,10 +12,13 @@ class Tile:
             print("My dear traveler, you can't fall of the cliff! "
                   "I won't let you do it.\n")
             return False
-        elif direction == "n":
+        elif direction == "e":
             print("It looks like the back of a wooden hut.\n"
                   "Since you don't walk though walls (yet) "
                   "you can't go there.\n")
             return False
+        elif direction == "s":
+            print("You follow the path uphill.")
+            return True
         else:
             return True
