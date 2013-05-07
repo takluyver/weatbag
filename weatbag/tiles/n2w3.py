@@ -20,8 +20,8 @@ class Tile:
 
     def leave(self, player, direction):
         if direction == "s":
-            print("STAHP! Hammer Time!\n(Meaning you just can't go to that "
-                  "direction yet. Sorry! :))\n")
+            print("Careful now! Nasty rocks all over to the south.\n"
+                  "(Meaning you just can't go to that direction. Sorry!)\n")
             return False
         else:
             return True
