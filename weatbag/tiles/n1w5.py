@@ -7,11 +7,12 @@ class Tile:
     
     def describe(self):
         if self.contents['rats']:
-            print("As you walk the path at the edge of the cliff you hear a "
-                  "squeaking sound and you notice two rat traps on the ground. "
-                  "Each are having one rat inside them trapped.\n"
+            print("As you walk the rocky path at the edge of the cliff you "
+                  "hear a squeaking sound and you notice two rat traps on the "
+                  "ground. Each are having one rat inside them trapped.\n"
                   "You could take the nasty rodents but really... what the "
-                  "hell are you gonna do with them?\n")
+                  "hell are you gonna do with them?\n"
+                  "Don't forget black death dear traveler!\n")
         else:
             print("You walk the path at the edge of the cliff. Nothing "
                   "to do here.\n")
@@ -24,7 +25,7 @@ class Tile:
 
     def take_rats(self, player):
         if transfer('rats', self.contents, player.inventory, n=2):
-            print("You take the rats.\n")
+            print("Ok then. You took the rats.\n")
         else:
             print("No more rats for now. Got to leave the traps do their "
                   "job.\n")
