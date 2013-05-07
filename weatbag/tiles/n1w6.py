@@ -1,7 +1,10 @@
 class Tile:
-
     def describe(self):
-        print("blah blah describe\n")
+        print("You have reached the top of the cliff! You feel the fresh "
+              "breeze in your face and you smell the salty sea! The view and "
+              "the weather here are wonderful! You'd like to stay but the "
+              "adventure spirit shakes you and you're on the move again.\n"
+              "So which way?\n")
 
     def action(self, player, do):
         print("Sorry, I don't understand.\n")
