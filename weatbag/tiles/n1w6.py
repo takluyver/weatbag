@@ -14,5 +14,6 @@ class Tile:
             print("My dear traveler, you can't go there, you will fall of the "
                    "cliff!\n")
             return False
-        else:
+        elif direction in('e', 'n'):
+            print("You follow tha path downhill.")
             return True
