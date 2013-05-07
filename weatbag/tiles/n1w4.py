@@ -3,11 +3,13 @@ class Tile:
         self.challenge_completed = False
 
     def describe(self):
-        print("\n")
+        print("The rocks led you to a path uphill.\n*Poof* A purrr-sian cat "
+              "appears in front of you!\n")
         if not self.challenge_completed:
             self.challenge()
         else:
-            print("")
+            print("The rocks led you to a path uphill.\nIt's a little bit "
+                  "windy and a flock of seagulls is flying above you.")
 
     def challenge(self):
         print("\n")
