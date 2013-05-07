@@ -13,5 +13,8 @@ class Tile:
             print("Are you planing to throw your self to the rocks? You can't "
                   "go there!\n")
             return False
+        elif direction == "n":
+            print("The rocks are way to high for you. "
+                  "Unfortunatelly you cannot climb them.")
         else:
             return True
