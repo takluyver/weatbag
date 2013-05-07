@@ -3,31 +3,30 @@ from weatbag.utils import transfer
 
 class Tile:
     def __init__(self):
-        self.contents = {'rats': 2}
+        self.contents = {'mice': 2}
     
     def describe(self):
-        if self.contents['rats']:
+        if self.contents['mice']:
             print("As you walk the rocky path at the edge of the cliff you "
-                  "hear a squeaking sound and you notice two rat traps on the "
-                  "ground. Each are having one rat inside them trapped.\n"
-                  "You could take the nasty rodents but really... what the "
-                  "hell are you gonna do with them?\n"
-                  "Don't forget black death dear traveler!\n")
+                  "hear a squeaking sound and you notice two mice traps on the "
+                  "ground. Each are having one mouse inside them trapped.\n"
+                  "You could take the silly rodents but really... what the "
+                  "hell are you gonna do with them?\n")
         else:
             print("You walk the path at the edge of the cliff. Nothing "
                   "to do here.\n")
 
     def action(self, player, do):
-        if (do[0] in words.take) and ('rats' in do):
-            self.take_rats(player)
+        if (do[0] in words.take) and ('mice' in do):
+            self.take_mice(player)
         else:
             print("Sorry, I don't understand.\n")
 
-    def take_rats(self, player):
-        if transfer('rats', self.contents, player.inventory, n=2):
-            print("Ok then. You took the rats.\n")
+    def take_mice(self, player):
+        if transfer('mice', self.contents, player.inventory, n=2):
+            print("Ok then. You took the mice.\n")
         else:
-            print("No more rats for now. Got to leave the traps do their "
+            print("No more mice for now. Got to leave the traps do their "
                   "job.\n")
 
     def leave(self, player, direction):
