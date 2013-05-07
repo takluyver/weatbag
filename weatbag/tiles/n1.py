@@ -1,4 +1,6 @@
 class Tile:
+    map_word = "Jungle"
+    
     def describe(self):
         print("A path runs through dense jungle. To the north, "
               "you can see the entrance to a cave.")

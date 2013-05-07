@@ -1,4 +1,6 @@
 class Tile:
+    map_word="Beach"
+    
     def describe(self):
         print("There is a small island northwest.\n"
               "Unfortunatelly, you can't swim because the sea is full of "

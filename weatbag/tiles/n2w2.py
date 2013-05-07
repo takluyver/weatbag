@@ -1,6 +1,8 @@
 from weatbag import words
 
 class Tile:
+    map_word = "Island"
+    
     def __init__(self):
         self.first_visit = True
 

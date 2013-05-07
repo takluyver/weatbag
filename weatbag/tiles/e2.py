@@ -2,6 +2,8 @@ from weatbag import words
 import random
 
 class Tile:
+    map_word = "Dwarf"
+    
     def __init__(self):
         self.contents = {'unlit torch': 1}
         self.lucky_number = random.randrange(1,100)

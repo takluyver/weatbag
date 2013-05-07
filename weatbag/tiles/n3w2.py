@@ -2,6 +2,8 @@ from weatbag import words
 from weatbag.utils import transfer
 
 class Tile:
+    map_word = "Fisherman"
+    
     def __init__(self):
         self.give_catfood = False
            

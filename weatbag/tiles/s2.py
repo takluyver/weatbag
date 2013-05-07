@@ -2,6 +2,7 @@
 from weatbag import words
 
 class Tile:
+    map_word = "Hill"
   
     def describe(self):
       print("To the South, the foliage begins to thin and the path winds "

@@ -1,4 +1,6 @@
 class Tile:
+    map_word = "Forest"
+    
     def __init__(self):
         self.first_visit = True
         self.tree_fallen = False

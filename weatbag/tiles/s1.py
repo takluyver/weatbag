@@ -1,4 +1,6 @@
 class Tile:
+    map_word = "Jungle"
+    
     def describe(self):
         print("You push through the undergrowth - "
             "the path is overgrown but continues on...")

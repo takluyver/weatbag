@@ -1,6 +1,8 @@
 from weatbag import words
 
 class Tile:
+  map_word = "Short man"
+
   def __init__(self):
     self.short_man_here = True
     self.pants_on_fire = False

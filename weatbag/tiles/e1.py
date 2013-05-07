@@ -2,6 +2,8 @@ from weatbag import words
 from weatbag.utils import transfer
 
 class Tile:
+    map_word = "Stream"
+    
     def __init__(self):
         self.contents = {'berries': 1}
     

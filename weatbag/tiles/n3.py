@@ -2,6 +2,8 @@ from weatbag import words
 import random 
 
 class Tile:
+    map_word = "Orc"
+    
     def __init__(self):
         self.enemy_dead = False
         self.enemy_life = 2

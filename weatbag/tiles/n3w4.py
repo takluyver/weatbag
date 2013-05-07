@@ -1,4 +1,6 @@
 class Tile:
+   map_word = "Path"
+
    def describe(self):
        print("Looks like you are in a walking mood because you still follow "
              "the path.\nYou hear birds singing, some small waves on the "

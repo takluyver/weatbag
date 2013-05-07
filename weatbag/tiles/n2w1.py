@@ -1,6 +1,8 @@
 from weatbag import words
 
 class Tile:
+    map_word = "Raft kids"
+    
     def __init__(self):
         self.challenge_completed = False
         self.minutes = "40"

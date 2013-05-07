@@ -2,6 +2,8 @@ from weatbag import words
 from weatbag.utils import transfer
 
 class Tile:
+    map_word = "Path"
+    
     def __init__(self):
         self.contents = {'doorknob': 1}
     

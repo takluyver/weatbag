@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Run this script to get a map of the whole game, to use when writing new
 tiles.
 """

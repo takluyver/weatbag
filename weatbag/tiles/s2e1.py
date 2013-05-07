@@ -7,6 +7,8 @@
 from weatbag import words
 
 class Tile:
+    map_word = "Bug quest"
+    
     def __init__(self):
         self.first_time = True
 

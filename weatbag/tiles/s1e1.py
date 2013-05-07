@@ -8,6 +8,8 @@ from weatbag import words
 import weatbag
 
 class Tile:
+    map_word = "Bug quest"
+    
     def __init__(self):
         self.bug_is_here = True
         self.first_visit = True
