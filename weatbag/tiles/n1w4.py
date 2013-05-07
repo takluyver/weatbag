@@ -53,7 +53,7 @@ class Tile:
             
     def leave(self, player, direction):
         if direction == "s":
-            print("Oh dear Basdet! You can't go north, you will fall of the "
+            print("Oh dear Basdet! You can't go south, you will fall of the "
                    "cliff!\n")
             return False
         elif direction == "n":

@@ -1,9 +1,7 @@
 class Tile:
 
     def describe(self):
-        print("The sandy beach is transforming into big rocks but it looks "
-              "like you are able to climb them.\n"
-              "Just be carefull because they are a bit slipery.")
+        print("Woooah! Those rocks are full of lichens!\n")
 
     def action(self, player, do):
         print("Sorry, I don't speak giberish.\n")
@@ -16,5 +14,6 @@ class Tile:
         elif direction == "n":
             print("The rocks are way to high for you. "
                   "Unfortunatelly you cannot climb them.")
+            return False
         else:
             return True

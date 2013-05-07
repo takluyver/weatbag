@@ -18,7 +18,7 @@ class Tile:
         elif direction == "w":
             print("The sandy beach is transforming into big rocks but it looks "
                   "like you are able to climb them.\n"
-                  "Just be carefull because they are a bit slipery.")
+                  "Just be careful because they are a bit slipery.")
             return True
         else:
             return True
