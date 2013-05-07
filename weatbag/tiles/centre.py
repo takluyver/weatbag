@@ -1,6 +1,8 @@
 from weatbag import words
 
 class Tile:
+    map_word = "Start"
+    
     def __init__(self):
         self.contents = {'rope': 1}
     
