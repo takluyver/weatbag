@@ -12,9 +12,25 @@ class Tile:
                   "windy and a flock of seagulls is flying above you.")
 
     def challenge(self):
-        print("\n")
-        pass
-
+        print("Meow good traveler! I have a question for you.\n"
+              "You might as well go away and ignore me and my awesome fur but "
+              "if you pass my little test I will reward you!\n\n"
+              "Here is a series of numbers.\n"
+              "What is the next number in the sequence?\n"
+              "1\n"
+              "11\n"
+              "21\n"
+              "1211\n"
+              "111221\n"
+              "312211\n"
+              "13112221\n")
+    #The next number in the sequence is 1113213211, because the rule for 
+    #creating the next number is to simply describe the previous number. 
+    #The first number is 1, or 1 (one) 1, so you get 11. 
+    #To describe 11, you have two 1's, or 21. Now you have one 2 and one 1, 
+    #so the next number is 1211. The solution is to simply continue describing 
+    #the previous number using only numbers.\n")
+     
     def action(self, player, do):
         if not self.challenge_completed:
             pass
