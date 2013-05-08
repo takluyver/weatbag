@@ -14,5 +14,8 @@ class Tile:
             print("You follow the path uphill. Just be careful of the slipery "
                   "rocks.")
             return True
+        elif direction == "n":
+            print("You are almost down at the beach.")
+            return True
         else:
             return True
