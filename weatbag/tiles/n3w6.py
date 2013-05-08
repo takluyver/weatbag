@@ -1,7 +1,7 @@
 class Tile:
 
     def describe(self):
-        print("\n")
+        print("Rocks. Big rocks. Slipery rocks all over!\n")
 
     def action(self, player, do):
         print("Sorry, I don't understand.\n")
