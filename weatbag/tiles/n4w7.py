@@ -2,12 +2,11 @@ from weatbag import words
 from weatbag.utils import transfer
 
 class Tile:
-
     def __init__(self):
         self.challenge_completed = False
         
     def describe(self):
-        if challenge_completed:
+        if not self.challenge_completed:
             print("The only thing around this place is sand, small rocks, the "
                   "beach waters and about a dozen of kitties playing around.\n"
                   "You aproach the kitties and to your surprise they all start "
@@ -18,6 +17,7 @@ class Tile:
                   "'PLZ SIR, IT VRY HAWT HEER, CAN U TREAT US SUM  MICE "
                   "CREAM?! ALL U NED IZ 2 COMBINE SUM MICE AN SUM CREAM AN "
                   "READY IT IZ! PLEEEEASE!' *mieaw* *rub* *rub*\n")
+            self.challenge_completed = True
         else:
             print("The only thing around this place is sand, small rocks, the "
                   "beach waters and about a dozen of kitties playing around.\n")
