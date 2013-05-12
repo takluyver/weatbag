@@ -23,8 +23,14 @@ class Tile:
                   "beach waters and about a dozen of kitties playing around.\n")
 
     def action(self, player, do):
-        print("Sorry, I don't understand.\n")
-        
+            if do[0] in words.use and do[1] == "mice" and do[2]=="cream":
+                if player.has("cream") and player.has("mice"):
+                    player.take("cream")
+                    player.take("mice")
+                    player.give("mice cream")
+                    print("Balls of tasty omnom mice cream fall from your "
+                         "hands! The kittens look sooooo pleased!")
+                else:
+                    print("You'll need some mice and some cream.")
         
 test_items = ['mice', 'cream']
-
