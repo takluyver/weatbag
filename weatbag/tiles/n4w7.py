@@ -30,12 +30,12 @@ class Tile:
                     player.take("mice")
                     print("Balls of tasty omnom mice cream fall from your "
                           "hands!\nThe kittens look very pleased!\n"
-                          "Because they are happy they give you an advice: "
+                          "Because they are happy they give you an advice:\n"
                           "'U SHUD AVOID BY ANY MEANZ TEH LIGHTHAUS! "
                           "BAD KAT LIVEZ THAR!'\n")
                     self.challenge_completed = True
-                else:
-                    print("You'll need some mice and cream.")
+            else:
+                print("You'll need some mice and cream.")
 
     def leave(self, player, direction):
         if direction == "s":
