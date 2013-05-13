@@ -27,7 +27,7 @@ class Tile:
 
     def leave(self, player, direction):
         if direction == 'w'or direction == 's' or direction == 'n':
-            print("Area 51. No trespassing beyond this point.\n")
+            print("I don't think you can pass through walls.\n")
             return False
         else:
             return True
