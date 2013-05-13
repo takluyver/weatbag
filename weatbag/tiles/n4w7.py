@@ -32,5 +32,17 @@ class Tile:
                          "hands! The kittens look sooooo pleased!")
                 else:
                     print("You'll need some mice and some cream.")
-        
+
+    def leave(self, player, direction):
+        if direction == "s":
+            print("It's the open sea. You can't go anywhere near by "
+                  "swimming.\n")
+            return False
+        elif direction == "w":
+            print("It's the open sea. You can't go anywhere near by "
+                  "swimming.\n")
+            return False
+        else:
+            return True
+
 test_items = ['mice', 'cream']
