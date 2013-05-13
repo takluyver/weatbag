@@ -30,5 +30,7 @@ class Tile:
         if do[0] == "no" and do[1] == "one" and do[2] == "understands":
             print("And that is absolutely right!\n"
                   "The lid opens and you see a brand new army knife!")
-
+        else:
+            print("Sorry, I don't understand.\n")
+            
 
