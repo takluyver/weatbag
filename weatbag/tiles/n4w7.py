@@ -11,26 +11,29 @@ class Tile:
               "a lighthouse on the north.\n")
         if not self.challenge_completed:
             self.kitties()
-            self.challenge_completed = True
+            
                   
     def kitties(self):
          print("You aproach the kitties and to your surprise they all start "
-               "rubbing at your legs and mewing! What is even more "
-               "surprising is that your brain understands and translates "
-               "meaws into words!\n"
+               "rubbing at your legs and mewing! What is even more surprising "
+               "is that your brain understands and translates meaws into "
+               "words!\n"
                "You can clearly hear them say:\n"
-               "'PLZ SIR, IT VRY HAWT HEER, CAN U TREAT US SUM  MICE "
-               "CREAM?! ALL U NED IZ 2 USE SUM MICE AN SUM CREAM AN "
-               "READY IT IZ! PLEEEEASE!' *mieaw* *rub* *rub*\n")
+               "'PLZ SIR, IT VRY HAWT HEER, CAN U TREAT US SUM  MICE CREAM?! "
+               "ALL U NED IZ 2 USE SUM MICE AN SUM CREAM AN READY IT IZ! "
+               "PLEEEEASE!' *mieaw* *rub* *rub*\n")
 
     def action(self, player, do):
             if do[0] in words.use and do[1] == "mice" and do[2]=="cream":
                 if player.has("cream") and player.has("mice"):
                     player.take("cream")
                     player.take("mice")
-                    player.give("mice cream")
                     print("Balls of tasty omnom mice cream fall from your "
-                         "hands! The kittens look sooooo pleased!")
+                          "hands!\nThe kittens look very pleased!\n"
+                          "Because they are happy they give you an advice: "
+                          "'U SHUD AVOID BY ANY MEANZ TEH LIGHTHAUS! "
+                          "BAD KAT LIVEZ THAR!'\n")
+                    self.challenge_completed = True
                 else:
                     print("You'll need some mice and cream.")
 
