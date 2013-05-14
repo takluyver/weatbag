@@ -30,10 +30,18 @@ class Tile:
             player.give("cream")
             self.challenge = True
         elif do[0] in words.take and do[1]=="cream":
-            print("Don't be greedy, you have all the cream you're gonna need.")
+            print("Don't be greedy, you have all the cream you're gonna "
+                  "need.\n")
         else:    
             print("I don't understand.\n")
         
-        
-        
-#sandy claws
+    def leave(self, player, direction):
+        if direction in ("n", "e"):
+            print("It's the open sea. You can't go anywhere near by "
+                  "swimming.\n")
+            return False
+        elif direction == "s":
+            print("A bunch of pine trees...")
+            return True
+        else:
+            return True
