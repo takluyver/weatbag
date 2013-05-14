@@ -24,10 +24,13 @@ class Tile:
 
     def action(self, player, do):
         if do[0]=="tom" and self.contents["cream"]:
-            print("That's correct. Now you can have some cream!\n")
+            print("That's correct. Now you can have some cream! "
+                  "There... already in your bag!\n")
             self.contents["cream"] -= 1
             player.give("cream")
             self.challenge = True
+        elif do[0] in words.take and do[1]=="cream":
+            print("Don't be greedy, you have all the cream you're gonna need.")
         else:    
             print("I don't understand.\n")
         
