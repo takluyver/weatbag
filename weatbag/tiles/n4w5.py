@@ -10,5 +10,9 @@ class Tile:
         if direction == "e":
             print("Area 51. No trespassing beyond this point.")
             return False
+        elif direction == "n":
+            print("There is an opening that leads you to the beach on the "
+                  "northen side of the island.\n")
+            return True
         else:
             return True
