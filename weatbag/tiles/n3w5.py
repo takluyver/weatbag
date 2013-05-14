@@ -42,3 +42,11 @@ class Tile:
             print("You take the knife.\n")
         else:
             print("There is nothing here.\n")
+            
+    def leave(self, player, direction):
+        if direction == "s":
+            print("In front of you there is a wall. It's the side of a wooden "
+                  "hut.")
+            return False
+        else:
+            return True
