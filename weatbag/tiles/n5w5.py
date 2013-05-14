@@ -25,7 +25,7 @@ class Tile:
     def action(self, player, do):
         if do[0]=="tom" and self.contents["cream"]:
             print("That's correct. Now you can have some cream! "
-                  "There... already in your bag!\n")
+                  "There... already in your bag!\nHave a mice day!\n")
             self.contents["cream"] -= 1
             player.give("cream")
             self.challenge = True
