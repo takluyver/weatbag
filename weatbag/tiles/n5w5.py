@@ -3,6 +3,7 @@ from weatbag.utils import transfer
 
 class Tile:
     def __init__(self):
+        self.contents = {"cream": 1}
         self.challenge_completed = False
         
     def describe(self):
@@ -12,9 +13,9 @@ class Tile:
             self.challenge()
             
     def challenge(self):
-        print("You go there and see that there's an old lady inside who stir a "
-              "pot. A fat ginger cat outside the kiosk is digging holes in the "
-              "sand.\nYou say hi, and the old lady replies:\n"
+        print("You go and see an old lady inside stir a pot. A fat ginger cat "
+              "outside the kiosk is digging holes in the sand.\n"
+              "You say hi, and the old lady replies:\n"
               "Hello to you traveler, I'm Grace Hopper and this is my cat "
               "Sandy Claws. I could offer you a cream but first you must "
               "answer me this:\n"
@@ -22,7 +23,14 @@ class Tile:
               "named May. What is the third one named?\n")
 
     def action(self, player, do):
-        print("I don't understand.\n")
+        if do[0]=="tom" and self.contents["cream"]:
+            print("That's correct. Now you can have some cream!\n")
+            self.contents["cream"] -= 1
+            player.give("cream")
+            self.challenge = True
+        else:    
+            print("I don't understand.\n")
+        
         
         
 #sandy claws
