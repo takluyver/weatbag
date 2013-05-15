@@ -39,7 +39,7 @@ class Tile:
             
     def take_knife(self, player, do):
         if transfer('knife', self.contents, player.inventory):
-            print("You take the knife.\n")
+            print("You put the knife in your bag.\n")
         else:
             print("There is nothing here.\n")
             
