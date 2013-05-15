@@ -38,11 +38,7 @@ class Tile:
                 print("You'll need some mice and cream.")
 
     def leave(self, player, direction):
-        if direction == "s":
-            print("It's the open sea. You can't go anywhere near by "
-                  "swimming.\n")
-            return False
-        elif direction == "w":
+        if direction in ("s", "w"):
             print("It's the open sea. You can't go anywhere near by "
                   "swimming.\n")
             return False
