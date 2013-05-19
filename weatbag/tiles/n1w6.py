@@ -15,5 +15,5 @@ class Tile:
                    "cliff!\n")
             return False
         elif direction in('e', 'n'):
-            print("You follow tha path downhill.")
+            print("You follow the path downhill.")
             return True

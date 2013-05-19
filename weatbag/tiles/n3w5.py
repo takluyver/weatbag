@@ -7,7 +7,7 @@ class Tile:
         self.challenge_completed = False
         
     def describe(self):
-        print("Your feet do a crackling sound as your feet snapp some twigs on "
+        print("Your feet make a crackling sound as your feet snap some twigs on "
               "the ground.\n")
         if not self.challenge_completed:
             self.challenge()
@@ -22,7 +22,7 @@ class Tile:
               "0_2345\n\n"
               "You try to open the box but it won't open.\n"
               "Now... as you might have guessed already, it is a magic box! "
-              "If you *understand* what these carvings represend the box will "
+              "If you *understand* what these carvings represent the box will "
               "open!")
         # What the riddle says is "No one understands"
 

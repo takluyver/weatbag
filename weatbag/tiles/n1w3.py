@@ -4,7 +4,7 @@ class Tile:
         print("Woooah! Those rocks are full of lichens!\n")
 
     def action(self, player, do):
-        print("Sorry, I don't speak giberish.\n")
+        print("Sorry, I don't speak gibberish.\n")
 
     def leave(self, player, direction):
         if direction == "s":
@@ -13,7 +13,7 @@ class Tile:
             return False
         elif direction == "n":
             print("The rocks are way to high for you. "
-                  "Unfortunatelly you cannot climb them.")
+                  "Unfortunately you cannot climb them.")
             return False
         else:
             return True

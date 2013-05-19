@@ -14,7 +14,7 @@ class Tile:
             
                   
     def kitties(self):
-         print("You aproach the kitties and to your surprise they all start "
+         print("You approach the kitties and to your surprise they all start "
                "rubbing at your legs and mewing! What is even more surprising "
                "is that your brain understands and translates meaws into "
                "words!\n"
@@ -30,7 +30,8 @@ class Tile:
                     player.take("mice")
                     print("Balls of tasty omnom mice cream fall from your "
                           "hands!\nThe kittens look very pleased!\n"
-                          "Because they are happy they give you an advice:\n"
+                          "Because they are happy they give you a piece of "
+                          "advice:\n"
                           "'U SHUD AVOID BY ANY MEANZ TEH LIGHTHAUS! "
                           "BAD KAT LIVEZ THAR!'\n")
                     self.challenge_completed = True

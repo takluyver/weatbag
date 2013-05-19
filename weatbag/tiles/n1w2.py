@@ -5,7 +5,7 @@ class Tile:
               "on the sea.")
 
     def action(self, player, do):
-        print("What is this giberish?")
+        print("What is this gibberish?")
 
     def leave(self, player, direction):
         if direction == "e":

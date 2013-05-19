@@ -3,7 +3,7 @@ class Tile:
        print("Looks like you are in a walking mood!\n"
              "You hear birds singing, some small waves on the background, "
              "there is a nice flowery smell, rays of sun make the tree "
-             "sceenery heavenly...\n"
+             "scenery heavenly...\n"
              "I totaly get you, it's a nice path to have a walk!\n")
                    
    def action(self, player, do):

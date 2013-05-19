@@ -18,7 +18,7 @@ class Tile:
               "If you tell a lie I will hang you; if you tell the truth I will "
               "shoot you.\n\n"
               "It looks like you are condemned... Though if you think a bit "
-              "more there is an apropriate answer that gets your ass out of "
+              "more there is an appropriate answer that gets your ass out of "
               "this hell!\n")
 
     # The exact answer is 'You will hang me'. If she hang him, then the
@@ -31,7 +31,7 @@ class Tile:
         else:
             print("You are inside the lighthouse. There's a computer in a "
                   "corner and some printed papers on the ground with "
-                  "scriblings like:\n\n"
+                  "scribblings like:\n\n"
                   "SO IM LIKE FIBBING WIT N OK?\n"
                   "    LOL ITERATE FIBONACCI TERMS LESS THAN N /LOL\n"
                   "    SO GOOD N BIG LIKE EASTERBUNNY\n"
@@ -78,5 +78,5 @@ class Tile:
                   "Hit your head on them?\n")
             return False
         else:
-            print("Finaly you are out!")
+            print("Finally you are out!")
             return True

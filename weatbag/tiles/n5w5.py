@@ -17,7 +17,7 @@ class Tile:
               "outside the kiosk is digging holes in the sand.\n"
               "You say hi, and the old lady replies:\n"
               "Hello to you traveler, I'm Grace Hopper and this is my cat "
-              "Sandy Claws. I could offer you a cream but first you must "
+              "Sandy Claws. I could offer you some cream but first you must "
               "answer me this:\n"
               "Tom's mother has three children. One is named April, one is "
               "named May. What is the third one named?\n")
