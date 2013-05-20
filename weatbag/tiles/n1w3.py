@@ -15,5 +15,8 @@ class Tile:
             print("The rocks are way to high for you. "
                   "Unfortunately you cannot climb them.")
             return False
+        elif direction == "w":
+            print("The rocks led you to a path uphill.")
+            return True
         else:
             return True
