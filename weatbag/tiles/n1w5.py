@@ -39,8 +39,8 @@ class Tile:
                   "Since you don't walk though walls (yet) "
                   "you can't go there.\n")
             return False
-        elif direction == "w":
-            print("You follow the path uphill.")
+        elif direction == "e":
+            print("You follow the path downhill.")
             return True
         else:
             return True
