@@ -8,12 +8,13 @@ class Tile:
         
     def describe(self):  
         if not self.challenge_completed:
-            print("The rocks led you to a path uphill.\n*Poof* A purrr-sian "
-                  "cat appears in front of you!\n")
+            print("*Poof* A purrr-sian cat appears in front of you!\n")
             self.challenge()
         else:
-            print("The rocks led you to a path uphill.\nIt's a little bit "
-                  "windy and a flock of seagulls is flying above you.")
+            print("Some pawprints on the ground probably from the persian cat "
+                  "you encountered earlier.\n"
+                  "It's a little bit windy and a flock of seagulls is flying "
+                  "above you.\n")
 
     def challenge(self):
         print("Meow good traveler! I have a question for you.\n"
@@ -41,7 +42,9 @@ class Tile:
                 print("You are a clever human, aren't you?!\n\n"
                       "Here is my offering. I give you this maneki-neko.\n"
                       "If you ever come across a wall of kittens and you want "
-                      "them to let you pass you will use this lucky charm!")                      
+                      "them to let you pass you will use this lucky charm!\n\n"
+                      "And as the cat says these words, "
+                      "*poof* she disappears!\n")                      
                 #https://en.wikipedia.org/wiki/Maneki-neko
                 self.contents['neko'] -= 1
                 player.give('neko')
