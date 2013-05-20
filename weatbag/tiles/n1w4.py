@@ -1,6 +1,8 @@
 from weatbag.utils import transfer
 
 class Tile:
+    map_word = "Persian cat"
+    
     def __init__(self):
         self.contents = {'neko': 1}
         self.challenge_completed = False

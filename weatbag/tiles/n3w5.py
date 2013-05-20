@@ -2,6 +2,8 @@ from weatbag import words
 from weatbag.utils import transfer
 
 class Tile:
+    map_word = "Box riddle"
+    
     def __init__(self):
         self.contents = {'knife': 1}
         self.challenge_completed = False

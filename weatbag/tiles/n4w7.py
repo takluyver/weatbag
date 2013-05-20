@@ -2,6 +2,8 @@ from weatbag import words
 from weatbag.utils import transfer
 
 class Tile:
+    map_word = "Kitties"
+    
     def __init__(self):
         self.challenge_completed = False
         

@@ -1,4 +1,5 @@
 class Tile:
+    map_word = "Cliff"
 
     def describe(self):
         print("Big rocks around the place, and the sound of small waves at the "

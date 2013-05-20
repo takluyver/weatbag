@@ -1,6 +1,8 @@
 from weatbag import words
 
 class Tile:
+    map_word = "Lighthouse"
+    
     def __init__(self):
         self.trapped = True
 

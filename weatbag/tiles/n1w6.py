@@ -1,4 +1,6 @@
 class Tile:
+    map_word = "Top cliff"
+    
     def describe(self):
         print("You have reached the top of the cliff! You feel the fresh "
               "breeze in your face and you smell the salty sea! The view and "

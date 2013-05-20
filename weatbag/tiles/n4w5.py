@@ -1,4 +1,6 @@
 class Tile:
+    map_word = "Pine forest"
+    
     def describe(self):
         print("There are not so many trees around but the ground is full of "
               "pine needles and pine cones.\n")

@@ -1,5 +1,6 @@
 class Tile:
-
+    map_word = "Beach rocks"
+    
     def describe(self):
         print("Woooah! Those rocks are full of lichens!\n")
 

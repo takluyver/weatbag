@@ -2,13 +2,15 @@ from weatbag import words
 from weatbag.utils import transfer
 
 class Tile:
+    map_word = "Kiosk"
+    
     def __init__(self):
         self.contents = {"cream": 1}
         self.challenge_completed = False
         
     def describe(self):
         print("You are on the beach. You see a small kiosk selling "
-              "ice creams!\n")
+              "ice cream!\n")
         if not self.challenge_completed:
             self.challenge()
             

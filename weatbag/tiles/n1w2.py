@@ -1,5 +1,6 @@
 class Tile:
-
+    map_word = "Island beach"
+    
     def describe(self):
         print("The beach is really quiet and you can hear and see the seagulls "
               "on the sea.")

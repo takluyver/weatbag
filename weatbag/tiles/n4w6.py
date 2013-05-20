@@ -1,4 +1,6 @@
 class Tile:
+    map_word = "Beach curve"
+    
     def describe(self):
         print("The beach makes a nice little curve on that spot. There are "
               "some pine trees around too. A really quiet sceenery!\n")
