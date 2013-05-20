@@ -29,7 +29,7 @@ class Tile:
             self.contents["cream"] -= 1
             player.give("cream")
             self.challenge = True
-        elif do[0] in words.take and do[1]=="cream":
+        elif do[0] in words.take and "cream" in do:
             print("Don't be greedy, you have all the cream you're gonna "
                   "need.\n")
         else:    
