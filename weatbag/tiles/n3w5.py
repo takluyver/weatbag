@@ -21,15 +21,15 @@ class Tile:
               "-------\n"
               "0_2345\n\n"
               "You try to open the box but it won't open.\n"
-              "Now... as you might have guessed already, it is a magic box! "
+              "Now... as you might have guessed already, it is a magic box!\n"
               "If you *understand* what these carvings represent the box will "
-              "open!")
+              "open!\n")
         # What the riddle says is "No one understands"
 
     def action(self, player, do):
         if do[0] == "no" and do[1] == "one" and do[2] == "understands":
             print("And that is absolutely right!\n"
-                  "The lid opens and you see a brand new army knife!")
+                  "The lid opens and you see a brand new army knife!\n")
 
         elif (do[0] in words.take) and ('knife' in do):
             self.take_knife(player, do)
@@ -45,8 +45,8 @@ class Tile:
             
     def leave(self, player, direction):
         if direction == "s":
-            print("In front of you there is a wall. It's the side of a wooden "
-                  "hut.")
+            print("You can't go there, it's a wall. It looks like the side of "
+                  "a wooden hut.\n")
             return False
         else:
             return True
