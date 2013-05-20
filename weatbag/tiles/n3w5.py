@@ -16,7 +16,7 @@ class Tile:
     def challenge(self):
         print("You just steped into something different. It is a metal box and "
               "it looks like something is written on it. You clear the dirt "
-              "of it and what you see carved in the box lid is:\n\n"
+              "off it and what you see carved in the box lid is:\n\n"
               "stands\n"
               "-------\n"
               "0_2345\n\n"
