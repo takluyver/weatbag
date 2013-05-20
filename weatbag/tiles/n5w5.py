@@ -29,6 +29,9 @@ class Tile:
             self.contents["cream"] -= 1
             player.give("cream")
             self.challenge = True
+        elif do[0] in words.take and "cream" in do and self.contents["cream"]:
+            print("No, it doesn't work this way. First you gotta answer my "
+                  "question!")
         elif do[0] in words.take and "cream" in do:
             print("Don't be greedy, you have all the cream you're gonna "
                   "need.\n")
