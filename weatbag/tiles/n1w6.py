@@ -9,12 +9,12 @@ class Tile:
               "So which way?\n")
 
     def action(self, player, do):
-        print("Sorry, I don't understand.\n")
+        print("Sorry, I don't understand.")
 
     def leave(self, player, direction):
         if direction in ('s', 'w'):
             print("My dear traveler, you can't go there, you will fall of the "
-                   "cliff!\n")
+                   "cliff!")
             return False
         elif direction in('e', 'n'):
             print("You follow the path downhill.")

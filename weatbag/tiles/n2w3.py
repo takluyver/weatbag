@@ -21,7 +21,7 @@ class Tile:
     def leave(self, player, direction):
         if direction == "s":
             print("Careful now! Nasty rocks all over to the south.\n"
-                  "(Meaning you just can't go to that direction. Sorry!)\n")
+                  "(Meaning you just can't go to that direction. Sorry!)")
             return False
         else:
             return True

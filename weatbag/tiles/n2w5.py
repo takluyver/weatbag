@@ -17,7 +17,7 @@ class Tile:
         if (do[0] in words.take) and ('catfood' in do):
             self.take_catfood(player) 
         else:
-            print("Sorry, I don't understand.\n")
+            print("Sorry, I don't understand.")
            
     def take_catfood(self, player):
         if transfer('catfood', self.contents, player.inventory, n=2):
@@ -27,7 +27,7 @@ class Tile:
 
     def leave(self, player, direction):
         if direction == 'w'or direction == 's' or direction == 'n':
-            print("I don't think you can pass through walls.\n")
+            print("I don't think you can pass through walls.")
             return False
         else:
             return True

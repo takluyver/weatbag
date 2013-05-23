@@ -69,15 +69,15 @@ class Tile:
         if self.trapped and direction in ("w", "n"):
             print("You are my prisoner, I won't let you leave. But even if you "
                   "could leave these are the inner walls of the lighthouse you "
-                  "idiot! And then the sea.\n")
+                  "idiot! And then the sea.")
             return False
         elif self.trapped and direction in ("e", "s"):
             print("What do you think you are doing? I won't let you leave. "
-                  "You are my prisoner!\n")
+                  "You are my prisoner!")
             return False
         elif direction in ("w", "n"):
             print("It's the lighthouse walls. What are you gonna do? "
-                  "Hit your head on them?\n")
+                  "Hit your head on them?")
             return False
         else:
             print("Finally you are out!")

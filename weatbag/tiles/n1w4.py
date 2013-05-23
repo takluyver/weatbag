@@ -46,7 +46,7 @@ class Tile:
                       "If you ever come across a wall of kittens and you want "
                       "them to let you pass you will use this lucky charm!\n\n"
                       "And as the cat says these words, "
-                      "*poof* she disappears!\n")                      
+                      "*poof* she disappears!")                      
                 #https://en.wikipedia.org/wiki/Maneki-neko
                 self.contents['neko'] -= 1
                 player.give('neko')
@@ -59,12 +59,12 @@ class Tile:
     def leave(self, player, direction):
         if direction == "s":
             print("Oh dear Basdet! You can't go south, you will fall of the "
-                   "cliff!\n")
+                   "cliff!")
             return False
         elif direction == "n":
             print("It looks like the side of a wooden hut.\n"
                   "Since you don't walk though walls (yet) "
-                  "you can't go there.\n")
+                  "you can't go there.")
             return False
         elif direction == "e":
             print("You follow the path downhill.")

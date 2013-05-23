@@ -5,11 +5,11 @@ class Tile:
         print("Rocks. Big rocks. Slippery rocks all over!\n")
 
     def action(self, player, do):
-        print("Sorry, I don't understand.\n")
+        print("Sorry, I don't understand.")
 
     def leave(self, player, direction):
         if direction == "w":
-            print("No-no! You'll break your head on the rocks down there!\n")
+            print("No-no! You'll break your head on the rocks down there!")
             return False
         elif direction == "s":
             print("You follow the path uphill. Just be careful of the slippery "

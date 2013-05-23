@@ -3,7 +3,7 @@ class Tile:
     
     def describe(self):
         print("The beach is really quiet and you can hear and see the seagulls "
-              "on the sea.")
+              "on the sea.\n")
 
     def action(self, player, do):
         print("What is this gibberish?")
@@ -14,7 +14,7 @@ class Tile:
                   "electric eels.\n")
             return False
         elif direction == "s":
-            print("I'm afraid I can't let you go there Dave.\n")
+            print("I'm afraid I can't let you go there Dave.")
             return False
         elif direction == "w":
             print("The sandy beach is transforming into big rocks but it looks "

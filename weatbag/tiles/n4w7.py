@@ -43,7 +43,7 @@ class Tile:
     def leave(self, player, direction):
         if direction in ("s", "w"):
             print("It's the open sea. You can't go anywhere near by "
-                  "swimming.\n")
+                  "swimming.")
             return False
         elif direction == "n":
             print("You are heading to the lighthouse.")

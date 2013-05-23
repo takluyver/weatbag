@@ -8,7 +8,7 @@ class Tile:
     def leave(self, player, direction):
         if direction == 'w':
             print("I'm afraid you can't go west.\nThe sea on that part is "
-                  "full of electric eels and you don't have a transport.\n")
+                  "full of electric eels and you don't have a transport.")
             return False
         elif direction == 'e':
             print("There's a steep mountainside here which you can't climb.")
@@ -36,6 +36,6 @@ class Tile:
                   "    '-...-'                        '-...-' \n")
             print("A wall of kitties doesn't allow you to go North.\n"
                   "But that doesn't make you mad... "
-                  "You can't be mad at kitties, rite?!\n")
+                  "You can't be mad at kitties, rite?!")
             return False
         return True

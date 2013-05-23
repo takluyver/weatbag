@@ -14,7 +14,7 @@ class Tile:
             return False
         elif direction == "n":
             print("There is an opening that leads you to the beach on the "
-                  "northen side of the island.\n")
+                  "northen side of the island.")
             return True
         else:
             return True

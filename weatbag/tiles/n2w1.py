@@ -36,11 +36,11 @@ class Tile:
                         print("Your answer has pleased me and my sister! "
                               "\nLet's go!")
                         print("The brother and sister will take you to the "
-                              "island.\n")
+                              "island.")
                         self.challenge_completed = True
                     else:
                         print("We're afraid this is not the correct answer. "
-                              "Try another one.\n")
+                              "Try another one.")
                 elif (do[0] in words.take) and (do[1] == "sister" or 
                                                 do[1] == "girl"):
                     print("You bastard! Let my sister down!\n"
@@ -48,14 +48,14 @@ class Tile:
                           "Taking advantage of little children?\n"
                           "We will transport you for free.\n")
                     print("The brother and sister will take you "
-                          "to the island!\n")
+                          "to the island!")
                     self.challenge_completed = True
                 elif (do[0] in words.take) and (do[1] == "brother" or
                                                 do[1] == "boy"):
                     print("You bastard, put me down!\n"
                           "We will trasnport you for free!\n")
                     print("The brother and sister will take you "
-                          "to the island!\n")
+                          "to the island!")
                     self.challenge_completed = True
                 elif (do[0] in words.take) and not self.challenge_completed:
                     print("I told you we won't give you our raft, "
@@ -68,7 +68,7 @@ class Tile:
     def leave(self, player, direction):
         if direction == "w" and not self.challenge_completed:
             print ("You can't go there by swimming, that part is full of "
-                   "electric eels.\n")
+                   "electric eels.")
             return False
         else:
             return True

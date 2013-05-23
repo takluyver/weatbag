@@ -22,7 +22,7 @@ class Tile:
         if (do[0] in words.take) and ('mice' in do):
             self.take_mice(player)
         else:
-            print("Sorry, I don't understand.\n")
+            print("Sorry, I don't understand.")
 
     def take_mice(self, player):
         if transfer('mice', self.contents, player.inventory, n=2):
@@ -34,12 +34,12 @@ class Tile:
     def leave(self, player, direction):
         if direction == "s":
             print("My dear traveler, you can't go south, you will fall off the "
-                   "cliff!\n")
+                   "cliff!")
             return False
         elif direction == "n":
             print("It looks like the side of a wooden hut.\n"
                   "Since you don't walk though walls (yet) "
-                  "you can't go there.\n")
+                  "you can't go there.")
             return False
         elif direction == "e":
             print("You follow the path downhill.")

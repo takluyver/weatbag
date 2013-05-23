@@ -18,7 +18,7 @@ class Tile:
             self.take_doorknob(player)
             
         else:
-            print("Sorry, I don't understand.\n")
+            print("Sorry, I don't understand.")
     
     def take_doorknob(self, player):
         if transfer('doorknob', self.contents, player.inventory):
@@ -28,7 +28,7 @@ class Tile:
             
     def leave(self, player, direction):
         if direction == "n":
-            print("Oops! You can't go there. There is a rocky wall.\n")
+            print("Oops! You can't go there. There is a rocky wall.")
             return False
         else:
             return True

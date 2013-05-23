@@ -38,12 +38,12 @@ class Tile:
             print("Don't be greedy, you have all the cream you're gonna "
                   "need.\n")
         else:    
-            print("I don't understand.\n")
+            print("I don't understand.")
         
     def leave(self, player, direction):
         if direction in ("n", "e"):
             print("It's the open sea. You can't go anywhere near by "
-                  "swimming.\n")
+                  "swimming.")
             return False
         elif direction == "s":
             print("A bunch of pine trees...")

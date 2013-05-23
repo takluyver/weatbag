@@ -37,7 +37,7 @@ class Tile:
             self.take_knife(player, do)
             self.challenge_completed = True        
         else:
-            print("Sorry, I don't understand.\n")
+            print("Sorry, I don't understand.")
             
     def take_knife(self, player, do):
         if transfer('knife', self.contents, player.inventory):
@@ -48,7 +48,7 @@ class Tile:
     def leave(self, player, direction):
         if direction == "s":
             print("You can't go there, it's a wall. It looks like the side of "
-                  "a wooden hut.\n")
+                  "a wooden hut.")
             return False
         else:
             return True
