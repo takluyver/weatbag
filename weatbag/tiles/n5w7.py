@@ -23,7 +23,7 @@ class Tile:
               "more there is an appropriate answer that gets your ass out of "
               "this hell!\n")
 
-    # The exact answer is 'You will hang me'. If she hang him, then the
+    # The exact answer is 'You will hang me'. If she hangs him, then the
     # statement was true and she could only hang him for telling a lie. 
     # If she shoot him, then it makes the statement a lie and she was only
     # to shoot him for telling the truth.
