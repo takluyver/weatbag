@@ -60,6 +60,13 @@ class Tile:
             elif do == ["you","will","not","shoot","me"]:
                 print("You dirty little human, I can only let you go now!\n")
                 self.trapped = False
+            elif player.has("catfood") and (do[0] in words.use or do[0] in words.give) and "catfood" in do:
+                print("Do you think that if you bribe me with catfood I'll let "
+                      "you leave?\nCatfood will not save you this time.\n"
+                      "The fat cat steals one catfood and eats it. You should "
+                      "be more carefull next time.")
+                player.take("catfood")
+                self.trapped = False
             else:
                 print("Keep saying bullshit and your end is close!")
         else:
@@ -82,3 +89,5 @@ class Tile:
         else:
             print("Finally you are out!")
             return True
+           
+test_items = ["catfood"]
