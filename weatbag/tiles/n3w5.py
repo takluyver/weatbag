@@ -9,12 +9,14 @@ class Tile:
         self.challenge_completed = False
         
     def describe(self):
-        print("Your feet make a crackling sound as your feet snap some twigs on "
-              "the ground.\n")
+        print("Your feet make a crackling sound as your feet snap some twigs "
+              "on the ground.")
         if not self.challenge_completed:
             self.challenge()
-            
-            
+        elif self.challenge_completed and self.contents["knife"]>0:
+            print("You look around and you see an open box with a knife "
+                 "inside. You should probably take it. A knife can be usefull.")
+         
     def challenge(self):
         print("You just steped into something different. It is a metal box and "
               "it looks like something is written on it. You clear the dirt "
@@ -32,10 +34,10 @@ class Tile:
         if do[0] == "no" and do[1] == "one" and do[2] == "understands":
             print("And that is absolutely right!\n"
                   "The lid opens and you see a brand new army knife!\n")
-
-        elif (do[0] in words.take) and ('knife' in do):
+            self.challenge_completed = True
+            
+        elif (do[0] in words.take) and ('knife' in do) and self.challenge_completed:    
             self.take_knife(player, do)
-            self.challenge_completed = True        
         else:
             print("Sorry, I don't understand.")
             
