@@ -54,10 +54,10 @@ class Tile:
 
     def action(self, player, do):
         if self.trapped:
-            if do[0]=="you" and do[1]=="will" and do[2]=="hang" and do[3]=="me":
+            if do == ["you","will","hang","me"]:
                 print("You dirty little human, I can only let you go now!\n")
                 self.trapped = False
-            elif do[0]=="you" and do[1]=="will" and do[2]=="not" and do[3]=="shoot" and do[4]=="me":
+            elif do == ["you","will","not","shoot","me"]:
                 print("You dirty little human, I can only let you go now!\n")
                 self.trapped = False
             else:
