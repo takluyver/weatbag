@@ -87,7 +87,7 @@ class Tile:
                   "Hit your head on them?")
             return False
         else:
-            print("Finally you are out!")
+            print("You are out!")
             return True
            
 test_items = ["catfood"]
