@@ -31,7 +31,7 @@ class Tile:
         # What the riddle says is "No one understands"
 
     def action(self, player, do):
-        if do[0] == "no" and do[1] == "one" and do[2] == "understands":
+        if do == ["no", "one", "understands"]:
             print("And that is absolutely right!\n"
                   "The lid opens and you see a brand new army knife!\n")
             self.challenge_completed = True
