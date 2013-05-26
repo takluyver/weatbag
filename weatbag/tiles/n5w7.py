@@ -8,20 +8,21 @@ class Tile:
 
     def describe(self):
         if self.trapped:
-            print("You are inside the lighthouse. You hear a clicking sound and "
-              "the door closes behind you.\nIt is dark, and an enormous cat "
-              "sits on a computer compiling felinux kernels.\n"
-              "You try to open the door and leave but you realize it is "
-              "locked.\n"
-              "The cat turns at you and hisses loudly.\n"
-              "She grawls and because you now speak cat, you understand what "
-              "she says.\n\n"
-              "Puny human, how dare you disturb my peace!\n"
-              "If you tell a lie I will hang you; if you tell the truth I will "
-              "shoot you.\n\n"
-              "It looks like you are condemned... Though if you think a bit "
-              "more there is an appropriate answer that gets your ass out of "
-              "this hell!\n")
+            print("You are inside the lighthouse. You hear a clicking sound "
+                  "and the door closes behind you.\n"
+                  "It is dark, and an enormous cat sits on a computer "
+                  "compiling felinux kernels.\n"
+                  "You try to open the door and leave but you realize it is "
+                  "locked.\n"
+                  "The cat turns at you and hisses loudly.\n"
+                  "She grawls and because you now speak cat, you understand "
+                  "what she says.\n\n"
+                  "Puny human, how dare you disturb my peace!\n"
+                  "If you tell a lie I will hang you; "
+                  "if you tell the truth I will shoot you.\n\n"
+                  "It looks like you are condemned... Though if you think a "
+                  "bit more there is an appropriate answer that gets your ass "
+                  "out of this hell!\n")
 
     # The exact answer is 'You will hang me'. If she hangs him, then the
     # statement was true and she could only hang him for telling a lie. 
@@ -50,7 +51,7 @@ class Tile:
                   "Ah huh you think... lolpython fibonacci. Crazy catworks. "
                   "Nothing to do here!\n")
 
-# http://www.dalkescientific.com/writings/diary/archive/2007/06/01/lolpython.html
+#http://www.dalkescientific.com/writings/diary/archive/2007/06/01/lolpython.html
 
     def action(self, player, do):
         if self.trapped:
@@ -60,7 +61,9 @@ class Tile:
             elif do == ["you","will","not","shoot","me"]:
                 print("You dirty little human, I can only let you go now!\n")
                 self.trapped = False
-            elif player.has("catfood") and (do[0] in words.use or do[0] in words.give) and "catfood" in do:
+            elif (player.has("catfood") 
+            and (do[0] in words.use or do[0] in words.give)
+            and "catfood" in do):
                 print("Do you think that if you bribe me with catfood I'll let "
                       "you leave?\nCatfood will not save you this time.\n"
                       "The fat cat steals one catfood and eats it. You should "

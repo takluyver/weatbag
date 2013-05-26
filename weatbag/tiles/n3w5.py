@@ -36,7 +36,8 @@ class Tile:
                   "The lid opens and you see a brand new army knife!\n")
             self.challenge_completed = True
             
-        elif (do[0] in words.take) and ('knife' in do) and self.challenge_completed:    
+        elif ((do[0] in words.take) and ('knife' in do) 
+        and self.challenge_completed):    
             self.take_knife(player, do)
         else:
             print("Sorry, I don't understand.")
