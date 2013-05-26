@@ -28,15 +28,15 @@ class Tile:
                 print("You'll need a doorknob to open the door.\n")
                 self.opendoor = False
         else:
-            print("Sorry, I don't understand.\n")    
+            print("Sorry, I don't understand.")    
             
     def leave(self, player, direction):
         if direction == 'w' and not self.opendoor:
-            print("First you need to enter the hut.\n")
+            print("First you need to enter the hut.")
             return False
         elif direction == 's':
             print("Meeeeh, nothing of importance is going on there, try "
-                  "another direction.\n")
+                  "another direction.")
             return False
         else:
             return True   

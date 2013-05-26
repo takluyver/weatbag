@@ -12,7 +12,7 @@ class Tile:
     def leave(self, player, direction):
         if direction == "w":
             print ("You can't go there by swimming, that part is full of "
-                   "electric eels.\n")
+                   "electric eels.")
             return False
         else:
             return True

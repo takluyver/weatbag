@@ -35,16 +35,16 @@ class Tile:
             elif len(do) > 1:
                 print("I have no use for that.\n")
         else:
-            print("Sorry, I don't understand.\n")
+            print("Sorry, I don't understand.")
     
 
     def leave(self, player, direction):
         if direction == 'e'and not self.give_catfood:
             print("You can't swim, remember the electric eels? You need a "
-                  "transport to go across.\n")
+                  "transport to go across.")
             return False
         if direction == 'n':
-            print("Nothing to do there.\n")
+            print("Nothing to do there.")
             return False
         else:
             return True
