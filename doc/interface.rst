@@ -39,7 +39,7 @@ Your module should define a class called ``Tile``, with the following interface:
       interpret the action and carry it out. Tile ``e1`` has a simple example.
       
       :param player: the active :class:`~weatbag.Player` instance
-      :param action: list of strings - the player's input, split up into words,
+      :param do: list of strings - the player's input, split up into words,
                      lowercase and with prepositions removed
 
    .. method:: leave(player, direction)
