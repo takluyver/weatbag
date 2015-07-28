@@ -7,7 +7,7 @@ e.g. This will recognise take, pick, get or collect::
         #...
 """
 # Verbs
-move = {'move','walk','go'}
+move = {'move', 'walk', 'go'}
 give = {'give', 'feed', 'present'}
 use = {'eat', 'use', 'wear'}
 fight = {'fight', 'kill', 'hit', 'attack'}
@@ -22,8 +22,13 @@ talk = {'talk', 'speak', 'converse'}
 inventory = {'inventory', 'possessions', 'belongings', 'bag'}
 surroundings = {'surroundings', 'around', 'scenery'}
 
+# Prepositions
 prepositions = {'up', 'down', 'on', 'under', 'in', 'at', 'to', 'with', 'and'}
 
-# yes/no
-yes = {'yes','y','yup','ye'}
-no = {'no','n','nope'}
+# Yes/No
+yes = {'yes', 'y', 'yup', 'ye'}
+no = {'no', 'n', 'nope'}
+
+# Control
+instructions = {'instructions', 'help', '?', 'tutorial'}
+exit = {'exit', 'quit'}
