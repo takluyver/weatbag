@@ -36,7 +36,8 @@ def handle_action(tile, player, do):
         # Show help text
         display_help()
 
-    elif len(do) == 2 and (do[0] in words.look) and (do[1] in words.surroundings):
+    elif (len(do) == 1 and (do[0] in words.look)) or \
+         (len(do) == 2 and (do[0] in words.look) and (do[1] in words.surroundings)):
         # Look around
         tile.describe()
 
