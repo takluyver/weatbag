@@ -7,15 +7,15 @@ e.g. This will recognise take, pick, get or collect::
         #...
 """
 # Verbs
-move = {'move', 'walk', 'go'}
-give = {'give', 'feed', 'present'}
-use = {'eat', 'use', 'wear'}
-fight = {'fight', 'kill', 'hit', 'attack'}
-drop = {'drop'}
-take = {'pick', 'take', 'get', 'collect'}
-look = {'look', 'inspect', 'examine'}
-attack = {'attack', 'swing', 'hit', 'punch', 'fight'}
-combine = {'combine', 'join', 'mix'}
+move = {'move', 'walk', 'go', 'travel', 'cross', 'pace', 'traverse'}
+give = {'give', 'feed', 'present', 'impart', 'pass'}
+use = {'eat', 'use', 'wear', 'utilise'}
+fight = {'fight', 'kill', 'hit', 'attack', 'afflict'}
+drop = {'drop', 'unload'}
+take = {'pick', 'take', 'get', 'collect', 'occupy', 'acquire', 'adopt', 'withdraw'}
+look = {'look', 'inspect', 'examine', 'search', 'check'}
+attack = {'attack', 'swing', 'hit', 'punch', 'kick', 'fight'}
+combine = {'combine', 'join', 'mix', 'unite', 'compound', 'aggregate', 'blend', 'coalesce', 'meld'}
 talk = {'talk', 'speak', 'converse'}
 
 # Nouns
